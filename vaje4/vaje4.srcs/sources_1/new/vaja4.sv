@@ -1,7 +1,7 @@
 //¸ Components for stopwatch
 module timer_0001s // General Purpose counter        
     #(parameter PRESCALER_WIDTH = 14,
-      parameter LIMIT = 100)
+      parameter LIMIT = 10000)
     (
         input logic clock,
         input logic reset,
@@ -16,25 +16,32 @@ module timer_0001s // General Purpose counter
     logic temp;
     
     
-    always_ff @ (posedge clock) begin //always_ff of sys verilog, pomeni da modeliramo del ki vsebuje Dflipflop
+    always_ff @ (posedge clock or posedge reset) begin //always_ff of sys verilog, pomeni da modeliramo del ki vsebuje Dflipflop
     if(reset) begin
         counter <= 0;
-        temp <= 0; //ne blokirajoci assignmen za sekvencno logiko
-    end else begin 
-    if(start) begin
-        counter <= counter + 1;
-            if (counter == LIMIT-1 ) begin
-                counter <= 0;
-                temp <= 1;
-            end else
-                temp <= 0;
-       end
+        time_tick <= 0; //ne blokirajoci assignmen za sekvencno logiko
+    end else if(start)begin 
+        if (counter == LIMIT-1 ) begin
+            counter <= 0;
+            time_tick <= 1;
+        end else begin
+            counter <= counter + 1;
+            time_tick <= 0;
+        end
+    end else begin
+        counter <= 0;
+        time_tick <= 0;
     end
 end
 
-always_comb begin
-    time_tick = ~temp;
-end 
+
+//assign time_tick = temp;
+
+
+// zakaj sem invertiral
+//always_comb begin
+//    time_tick = ~temp;
+//end 
 
 endmodule
 
@@ -64,27 +71,27 @@ always_ff @ (posedge clock) begin //always_ff of sys verilog, pomeni da modelira
     if(reset) begin
         counter <= 0;
     end else if(increment) begin
-//            if (counter == MOD_COUNTER-1) begin
-//                counter <= 0;
-//                overflow <= 1;
-//            end else begin
-//                overflow <= 0;
+            if (counter == MOD_COUNTER-1) begin
+                counter <= 0;
+                overflow <= 1;
+            end else begin
+                overflow <= 0;
                 counter <= counter + 1;
             end
-//    end else begin
-//        overflow <= 0;
-//    end
+    end else begin
+        overflow <= 0;
+    end
 end    
 
-always_comb begin :ovrflw
+//always_comb begin :ovrflw
 
-    if(counter == MOD_COUNTER-1) begin
-        counter <= 0;
-        overflow <= 1;
-    end else 
-        overflow <= 0;
+//    if(counter == MOD_COUNTER-1) begin
+//        counter <= 0;
+//        overflow <= 1;
+//    end else 
+//        overflow <= 0;
     
-end
+//end
 
 endmodule
 
@@ -103,13 +110,13 @@ module anode_assert (
 
 
 
-always_ff @ (posedge clock_enable) begin
+always_ff @ (posedge clock_enable or posedge reset) begin
 
     if(reset) begin
         count <= 0;
     end else begin
         count <= count +1;
-        if(count == 8)
+        if(count == 7)
             count <= 0;
     end
 
@@ -124,37 +131,37 @@ end
 endmodule
 
 
-module value_to_digit(
-    input logic [31:0] value,
-    input logic [7:0] anode_select,
-    output logic [3:0] digit
-);
-    
-    // if anode_select is 0xFE, then digit is equal to value[3:0]
-    // if anode_select is 0xFD, then digit is equal to value[7:4]
-    // if anode_select is 0xFB, then digit is equal to value[11:8]
-    // if anode_select is 0xF7, then digit is equal to value[15:12]
-    // if anode_select is 0xEF, then digit is equal to value[19:16]
-    // if anode_select is 0xDF, then digit is equal to value[23:20]
-    // if anode_select is 0xBF, then digit is equal to value[27:24]
-    // if anode_select is 0x7F, then digit is equal to value[31:28]ž
-    
-    always_comb begin : v_to_d
-        case (anode_select)
-            8'hFE: digit = value[3:0];
-            8'hFD: digit = value[7:4];
-            8'hFB: digit = value[11:8];
-            8'hF7: digit = value[15:12];
-            8'hEF: digit = value[19:16];
-            8'hDF: digit = value[23:20];
-            8'hBF: digit = value[27:24];
-            8'h7F: digit = value[31:28];
-            default: digit = value[31:28];
-        endcase
-    end
-    
-    
-endmodule
+    module value_to_digit(
+        input logic [31:0] value,
+        input logic [7:0] anode_select,
+        output logic [3:0] digit
+    );
+        
+        // if anode_select is 0xFE, then digit is equal to value[3:0]
+        // if anode_select is 0xFD, then digit is equal to value[7:4]
+        // if anode_select is 0xFB, then digit is equal to value[11:8]
+        // if anode_select is 0xF7, then digit is equal to value[15:12]
+        // if anode_select is 0xEF, then digit is equal to value[19:16]
+        // if anode_select is 0xDF, then digit is equal to value[23:20]
+        // if anode_select is 0xBF, then digit is equal to value[27:24]
+        // if anode_select is 0x7F, then digit is equal to value[31:28]ž
+        
+        always_comb begin : v_to_d
+            case (anode_select)
+                8'hFE: digit = value[3:0];
+                8'hFD: digit = value[7:4];
+                8'hFB: digit = value[11:8];
+                8'hF7: digit = value[15:12];
+                8'hEF: digit = value[19:16];
+                8'hDF: digit = value[23:20];
+                8'hBF: digit = value[27:24];
+                8'h7F: digit = value[31:28];
+                default: digit = value[31:28];
+            endcase
+        end
+        
+        
+    endmodule
 
 // purely comb module 
 
@@ -208,13 +215,12 @@ module SevSegDisplay (
     
     logic [3:0] dg;
 
-    logic [7:0] an_sel;
 
     assign digit = {digit8, digit7, digit6, digit5, digit4, digit3, digit2, digit1};
     
     value_to_digit v2d (
     .value(digit),
-    .anode_select(an_sel),
+    .anode_select(anode_select),
     .digit(dg)
 );
 
@@ -231,9 +237,11 @@ module SevSegDisplay (
     .anode_select(anode_select)
 );
 
+//zacasno bom ta timer zvezal na input clock 7segmenta, ker itak ni vezan na sistem clock
+//takda bom v top modulu stpwatch nareo se eno urico ki bo sotal 0.002
 timer_0001s #(
     .PRESCALER_WIDTH(14),
-    .LIMIT(200000)    
+    .LIMIT(10000)    
 ) urica(
     .clock(clock),
     .reset(reset),
@@ -257,11 +265,10 @@ logic time_tick;
 timer_0001s #(
     .PRESCALER_WIDTH(14),
     .LIMIT(10000)    
-) urica(
+) urica(    
     .clock(clock),
     .reset(reset),
     .start(start),
-    
     .time_tick(time_tick)
 );
 
@@ -392,7 +399,16 @@ mod_counter #(
 
 //=====================================
 //7 segment
-
+//logic tempUra;
+//timer_0001s #(
+//    .PRESCALER_WIDTH(14),
+//    .LIMIT(200000)    
+//) ura_seg (
+//    .clock(clock),
+//    .reset(reset),
+//    .start(1),
+//    .time_tick(tempUra)
+//);
 
 SevSegDisplay sevenSeg (
     .clock(clock),

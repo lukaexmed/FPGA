@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "H:/digitalno/vaje4/vaje4.runs/synth_1/stopwatch.tcl"
+  variable script "E:/FAX/digitalnoNacrt/vaje4/vaje4.runs/synth_1/stopwatch.tcl"
   variable category "vivado_synth"
 }
 
@@ -56,23 +56,24 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 6
+set_param chipscope.maxJobs 1
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a50tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir H:/digitalno/vaje4/vaje4.cache/wt [current_project]
-set_property parent.project_path H:/digitalno/vaje4/vaje4.xpr [current_project]
+set_property webtalk.parent_dir E:/FAX/digitalnoNacrt/vaje4/vaje4.cache/wt [current_project]
+set_property parent.project_path E:/FAX/digitalnoNacrt/vaje4/vaje4.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo h:/digitalno/vaje4/vaje4.cache/ip [current_project]
+set_property ip_output_repo e:/FAX/digitalnoNacrt/vaje4/vaje4.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib -sv H:/digitalno/vaje4/vaje4.srcs/sources_1/new/vaja4.sv
+read_verilog -library xil_defaultlib -sv E:/FAX/digitalnoNacrt/vaje4/vaje4.srcs/sources_1/new/vaja4.sv
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -82,12 +83,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc H:/digitalno/vaje4/vaje4.srcs/constrs_1/new/vaje7_constraints.xdc
-set_property used_in_implementation false [get_files H:/digitalno/vaje4/vaje4.srcs/constrs_1/new/vaje7_constraints.xdc]
+read_xdc E:/FAX/digitalnoNacrt/vaje4/vaje4.srcs/constrs_1/new/vaje7_constraints.xdc
+set_property used_in_implementation false [get_files E:/FAX/digitalnoNacrt/vaje4/vaje4.srcs/constrs_1/new/vaje7_constraints.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental H:/digitalno/vaje4/vaje4.srcs/utils_1/imports/synth_1/stopwatch.dcp
+read_checkpoint -auto_incremental -incremental E:/FAX/digitalnoNacrt/vaje4/vaje4.srcs/utils_1/imports/synth_1/stopwatch.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

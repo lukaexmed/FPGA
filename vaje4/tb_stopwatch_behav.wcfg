@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.001363450 ms"></ZoomStartTime>
-      <ZoomEndTime time="0.001365083 ms"></ZoomEndTime>
-      <Cursor1Time time="0.001364810 ms"></Cursor1Time>
+      <ZoomStartTime time="16,068.742 ns"></ZoomStartTime>
+      <ZoomEndTime time="17,135.990 ns"></ZoomEndTime>
+      <Cursor1Time time="16,246.616 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="168"></NameColumnWidth>
-      <ValueColumnWidth column_width="106"></ValueColumnWidth>
+      <NameColumnWidth column_width="170"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="9" />
+   <WVObjectSize size="14" />
    <wave_markers>
       <marker time="251000000" label="" />
       <marker time="3035000" label="" />
@@ -36,6 +36,10 @@
       <obj_property name="ElementShortName">starts</obj_property>
       <obj_property name="ObjectShortName">starts</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb_stopwatch/uut/urica/time_tick" type="logic">
+      <obj_property name="ElementShortName">time_tick</obj_property>
+      <obj_property name="ObjectShortName">time_tick</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb_stopwatch/anode_assert" type="array">
       <obj_property name="ElementShortName">anode_assert[7:0]</obj_property>
       <obj_property name="ObjectShortName">anode_assert[7:0]</obj_property>
@@ -45,20 +49,81 @@
       <obj_property name="ObjectShortName">segs[6:0]</obj_property>
       <obj_property name="isExpanded"></obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_stopwatch/uut/urica/time_tick" type="logic">
-      <obj_property name="ElementShortName">time_tick</obj_property>
-      <obj_property name="ObjectShortName">time_tick</obj_property>
+   <wvobject fp_name="/tb_stopwatch/uut/D1_count" type="array">
+      <obj_property name="ElementShortName">D1_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">D1_count[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_stopwatch/uut/D1_count" type="logic">
-      <obj_property name="ElementShortName">D1_count</obj_property>
-      <obj_property name="ObjectShortName">D1_count</obj_property>
+   <wvobject fp_name="/tb_stopwatch/uut/D2_count" type="array">
+      <obj_property name="ElementShortName">D2_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">D2_count[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_stopwatch/uut/D2_count" type="logic">
-      <obj_property name="ElementShortName">D2_count</obj_property>
-      <obj_property name="ObjectShortName">D2_count</obj_property>
+   <wvobject fp_name="/tb_stopwatch/uut/D3_count" type="array">
+      <obj_property name="ElementShortName">D3_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">D3_count[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_stopwatch/uut/D3_count" type="logic">
-      <obj_property name="ElementShortName">D3_count</obj_property>
-      <obj_property name="ObjectShortName">D3_count</obj_property>
+   <wvobject type="divider" fp_name="divider197">
+      <obj_property name="label">7Seg inps/outs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group198" type="group">
+      <obj_property name="label">v2d</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_stopwatch/uut/sevenSeg/v2d/value" type="array">
+         <obj_property name="ElementShortName">value[31:0]</obj_property>
+         <obj_property name="ObjectShortName">value[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_stopwatch/uut/sevenSeg/v2d/anode_select" type="array">
+         <obj_property name="ElementShortName">anode_select[7:0]</obj_property>
+         <obj_property name="ObjectShortName">anode_select[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_stopwatch/uut/sevenSeg/v2d/digit" type="array">
+         <obj_property name="ElementShortName">digit[3:0]</obj_property>
+         <obj_property name="ObjectShortName">digit[3:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group204" type="group">
+      <obj_property name="label">d2s</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_stopwatch/uut/sevenSeg/d2s/digit" type="array">
+         <obj_property name="ElementShortName">digit[3:0]</obj_property>
+         <obj_property name="ObjectShortName">digit[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_stopwatch/uut/sevenSeg/d2s/segs" type="array">
+         <obj_property name="ElementShortName">segs[6:0]</obj_property>
+         <obj_property name="ObjectShortName">segs[6:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group210" type="group">
+      <obj_property name="label">anAssrt</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_stopwatch/uut/sevenSeg/anAssrt/clock_enable" type="logic">
+         <obj_property name="ElementShortName">clock_enable</obj_property>
+         <obj_property name="ObjectShortName">clock_enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_stopwatch/uut/sevenSeg/anAssrt/anode_select" type="array">
+         <obj_property name="ElementShortName">anode_select[7:0]</obj_property>
+         <obj_property name="ObjectShortName">anode_select[7:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_stopwatch/uut/sevenSeg/anAssrt/count" type="array">
+         <obj_property name="ElementShortName">count[2:0]</obj_property>
+         <obj_property name="ObjectShortName">count[2:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group219" type="group">
+      <obj_property name="label">0.002timer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_stopwatch/uut/sevenSeg/urica/time_tick" type="logic">
+         <obj_property name="ElementShortName">time_tick</obj_property>
+         <obj_property name="ObjectShortName">time_tick</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_stopwatch/uut/sevenSeg/urica/clock" type="logic">
+         <obj_property name="ElementShortName">clock</obj_property>
+         <obj_property name="ObjectShortName">clock</obj_property>
+      </wvobject>
    </wvobject>
 </wave_config>
