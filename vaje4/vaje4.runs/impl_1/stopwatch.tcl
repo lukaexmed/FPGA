@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "E:/FAX/digitalnoNacrt/vaje4/vaje4.runs/impl_1/stopwatch.tcl"
+  variable script "H:/digitalno/vaje4/vaje4.runs/impl_1/stopwatch.tcl"
   variable category "vivado_impl"
 }
 
@@ -104,24 +104,24 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 1
+  set_param chipscope.maxJobs 6
   set_param xicom.use_bs_reader 1
-  set_param runs.launchOptions { -jobs 4  }
+  set_param runs.launchOptions { -jobs 20  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a50tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir E:/FAX/digitalnoNacrt/vaje4/vaje4.cache/wt [current_project]
-  set_property parent.project_path E:/FAX/digitalnoNacrt/vaje4/vaje4.xpr [current_project]
-  set_property ip_output_repo E:/FAX/digitalnoNacrt/vaje4/vaje4.cache/ip [current_project]
+  set_property webtalk.parent_dir H:/digitalno/vaje4/vaje4.cache/wt [current_project]
+  set_property parent.project_path H:/digitalno/vaje4/vaje4.xpr [current_project]
+  set_property ip_output_repo H:/digitalno/vaje4/vaje4.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet E:/FAX/digitalnoNacrt/vaje4/vaje4.runs/synth_1/stopwatch.dcp
+  add_files -quiet H:/digitalno/vaje4/vaje4.runs/synth_1/stopwatch.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc E:/FAX/digitalnoNacrt/vaje4/vaje4.srcs/constrs_1/new/vaje7_constraints.xdc
+  read_xdc H:/digitalno/vaje4/vaje4.srcs/constrs_1/new/vaje7_constraints.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

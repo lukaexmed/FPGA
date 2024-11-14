@@ -1,30 +1,20 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="lukak" Host="DESKTOP-VLIJTU5" Pid="1228" HostCore="4" HostMemory="017091334144">
+    <Process Command="vivado.bat" Owner="lk25793" Host="PR07-10" Pid="16900" HostCore="24" HostMemory="034116128768">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="lukak" Host="DESKTOP-VLIJTU5" Pid="3424" HostCore="4" HostMemory="017091334144">
+    <Process Command="vivado.bat" Owner="lk25793" Host="PR07-10" Pid="5064" HostCore="24" HostMemory="034116128768">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="lukak" Host="DESKTOP-VLIJTU5" Pid="6996" HostCore="4" HostMemory="017091334144">
+    <Process Command="vivado.bat" Owner="lk25793" Host="PR07-10" Pid="6400" HostCore="24" HostMemory="034116128768">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="lukak" Host="DESKTOP-VLIJTU5" Pid="5228" HostCore="4" HostMemory="017091334144">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="lukak" Host="DESKTOP-VLIJTU5" Pid="7068" HostCore="4" HostMemory="017091334144">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="lukak" Host="DESKTOP-VLIJTU5" Pid="3536" HostCore="4" HostMemory="017091334144">
+    <Process Command="vivado.bat" Owner="lk25793" Host="PR07-10" Pid="16536" HostCore="24" HostMemory="034116128768">
     </Process>
 </ProcessHandle>

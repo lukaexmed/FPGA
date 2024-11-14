@@ -1,60 +1,43 @@
 Vivado Simulator v2024.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: E:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_stopwatch_behav xil_defaultlib.tb_stopwatch xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_stopwatch_behav xil_defaultlib.tb_stopwatch xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'counter' [E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv:264]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'counter' [E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv:279]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'counter' [E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv:295]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'counter' [E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv:311]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'counter' [E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv:327]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'counter' [E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv:342]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'counter' [E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv:356]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'counter' [E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv:371]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'digit1' [E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv:381]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'digit2' [E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv:382]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'digit3' [E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv:383]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'digit4' [E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv:384]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'digit5' [E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv:385]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'digit6' [E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv:386]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'digit7' [E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv:387]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'digit8' [E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv:388]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'anode_select' [E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv:205]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv:228]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv:240]
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 234. Module stopwatch doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 2. Module timer_0001s doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 41. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 41. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 41. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 41. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 41. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 41. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 41. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 41. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 177. Module SevSegDisplay doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 116. Module value_to_digit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 150. Module digit_to_segments doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 79. Module anode_assert doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 2. Module timer_0001s(LIMIT=200000) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 234. Module stopwatch doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 2. Module timer_0001s doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 41. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 41. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 41. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 41. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 41. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 41. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 41. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 41. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 177. Module SevSegDisplay doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 116. Module value_to_digit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 150. Module digit_to_segments doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 79. Module anode_assert doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 2. Module timer_0001s(LIMIT=200000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 246. Module stopwatch doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 2. Module timer_0001s doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 43. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 43. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 43. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 43. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 43. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 43. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 43. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 43. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 188. Module SevSegDisplay doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 127. Module value_to_digit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 161. Module digit_to_segments doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 93. Module anode_assert doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 2. Module timer_0001s doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 246. Module stopwatch doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 2. Module timer_0001s doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 43. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 43. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 43. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 43. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 43. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 43. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 43. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 43. Module mod_counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 188. Module SevSegDisplay doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 127. Module value_to_digit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 161. Module digit_to_segments doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 93. Module anode_assert doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv" Line 2. Module timer_0001s doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.timer_0001s
@@ -62,7 +45,6 @@ Compiling module xil_defaultlib.mod_counter
 Compiling module xil_defaultlib.value_to_digit
 Compiling module xil_defaultlib.digit_to_segments
 Compiling module xil_defaultlib.anode_assert
-Compiling module xil_defaultlib.timer_0001s(LIMIT=200000)
 Compiling module xil_defaultlib.SevSegDisplay
 Compiling module xil_defaultlib.stopwatch
 Compiling module xil_defaultlib.tb_stopwatch

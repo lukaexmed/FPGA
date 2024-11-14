@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Tue Nov 12 00:39:57 2024
-| Host         : DESKTOP-VLIJTU5 running 64-bit major release  (build 9200)
+| Date         : Tue Nov 12 16:12:58 2024
+| Host         : PR07-10 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file stopwatch_utilization_synth.rpt -pb stopwatch_utilization_synth.pb
 | Design       : stopwatch
 | Device       : xc7a50tcsg324-1
@@ -34,9 +34,9 @@ Table of Contents
 | Slice LUTs*             |   40 |     0 |          0 |     32600 |  0.12 |
 |   LUT as Logic          |   40 |     0 |          0 |     32600 |  0.12 |
 |   LUT as Memory         |    0 |     0 |          0 |      9600 |  0.00 |
-| Slice Registers         |   51 |     0 |          0 |     65200 |  0.08 |
-|   Register as Flip Flop |   51 |     0 |          0 |     65200 |  0.08 |
-|   Register as Latch     |    0 |     0 |          0 |     65200 |  0.00 |
+| Slice Registers         |   55 |     0 |          0 |     65200 |  0.08 |
+|   Register as Flip Flop |   54 |     0 |          0 |     65200 |  0.08 |
+|   Register as Latch     |    1 |     0 |          0 |     65200 | <0.01 |
 | F7 Muxes                |    0 |     0 |          0 |     16300 |  0.00 |
 | F8 Muxes                |    0 |     0 |          0 |      8150 |  0.00 |
 +-------------------------+------+-------+------------+-----------+-------+
@@ -58,9 +58,9 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
-| 0     |          Yes |           - |        Reset |
-| 1     |          Yes |         Set |            - |
-| 50    |          Yes |       Reset |            - |
+| 1     |          Yes |           - |        Reset |
+| 0     |          Yes |         Set |            - |
+| 54    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -115,7 +115,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +------------+------+-------+------------+-----------+-------+
 |  Site Type | Used | Fixed | Prohibited | Available | Util% |
 +------------+------+-------+------------+-----------+-------+
-| BUFGCTRL   |    1 |     0 |          0 |        32 |  3.13 |
+| BUFGCTRL   |    2 |     0 |          0 |        32 |  6.25 |
 | BUFIO      |    0 |     0 |          0 |        20 |  0.00 |
 | MMCME2_ADV |    0 |     0 |          0 |         5 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |          0 |         5 |  0.00 |
@@ -149,17 +149,16 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |   50 |        Flop & Latch |
-| LUT4     |   30 |                 LUT |
+| FDRE     |   54 |        Flop & Latch |
+| LUT4     |   43 |                 LUT |
 | OBUF     |   15 |                  IO |
-| LUT2     |   13 |                 LUT |
 | LUT1     |    9 |                 LUT |
 | LUT3     |    6 |                 LUT |
 | CARRY4   |    4 |          CarryLogic |
 | IBUF     |    3 |                  IO |
-| LUT6     |    2 |                 LUT |
-| FDSE     |    1 |        Flop & Latch |
-| BUFG     |    1 |               Clock |
+| BUFG     |    2 |               Clock |
+| LUT6     |    1 |                 LUT |
+| LDCE     |    1 |        Flop & Latch |
 +----------+------+---------------------+
 
 

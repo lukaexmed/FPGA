@@ -1,7 +1,7 @@
 //¸ Components for stopwatch
 module timer_0001s // General Purpose counter        
     #(parameter PRESCALER_WIDTH = 14,
-      parameter LIMIT = 10000)
+      parameter LIMIT = 100)
     (
         input logic clock,
         input logic reset,
@@ -20,13 +20,15 @@ module timer_0001s // General Purpose counter
     if(reset) begin
         counter <= 0;
         temp <= 0; //ne blokirajoci assignmen za sekvencno logiko
-    end else if(start) begin
+    end else begin 
+    if(start) begin
         counter <= counter + 1;
             if (counter == LIMIT-1 ) begin
                 counter <= 0;
                 temp <= 1;
             end else
                 temp <= 0;
+       end
     end
 end
 
@@ -62,18 +64,27 @@ always_ff @ (posedge clock) begin //always_ff of sys verilog, pomeni da modelira
     if(reset) begin
         counter <= 0;
     end else if(increment) begin
-            if (counter == MOD_COUNTER-1) begin
-                counter <= 0;
-                overflow <= 1;
-            end else begin
-                overflow <= 0;
+//            if (counter == MOD_COUNTER-1) begin
+//                counter <= 0;
+//                overflow <= 1;
+//            end else begin
+//                overflow <= 0;
                 counter <= counter + 1;
             end
-    end else begin
-        overflow <= 0;
-    end
+//    end else begin
+//        overflow <= 0;
+//    end
 end    
 
+always_comb begin :ovrflw
+
+    if(counter == MOD_COUNTER-1) begin
+        counter <= 0;
+        overflow <= 1;
+    end else 
+        overflow <= 0;
+    
+end
 
 endmodule
 
@@ -197,6 +208,7 @@ module SevSegDisplay (
     
     logic [3:0] dg;
 
+    logic [7:0] an_sel;
 
     assign digit = {digit8, digit7, digit6, digit5, digit4, digit3, digit2, digit1};
     
@@ -243,16 +255,18 @@ logic time_tick;
 
 
 timer_0001s #(
-    .PRESCALER_WIDTH(14)    
+    .PRESCALER_WIDTH(14),
+    .LIMIT(10000)    
 ) urica(
     .clock(clock),
     .reset(reset),
     .start(start),
+    
     .time_tick(time_tick)
 );
 
 logic D1_overflow;
-logic D1_count;
+logic [3:0] D1_count;
 
 mod_counter #(
     .MOD_COUNTER(10),
@@ -266,8 +280,21 @@ mod_counter #(
 );
 
 
+
 logic D2_overflow;
-logic D2_count;
+logic [3:0] D2_count;
+logic D5_overflow;
+logic [3:0] D5_count;
+logic D4_overflow;
+logic [3:0] D4_count;
+logic D6_overflow;
+logic [3:0] D6_count;
+logic D3_overflow;
+logic [3:0] D3_count;
+logic D7_overflow;
+logic [3:0] D7_count;
+logic D8_overflow;
+logic [3:0] D8_count; 
 
 mod_counter #(
     .MOD_COUNTER(10),
@@ -280,10 +307,7 @@ mod_counter #(
     .overflow(D2_overflow)
 );
 
-logic D5_overflow;
-logic D5_count;
-logic D4_overflow;
-logic D4_count;
+
 
 mod_counter #(
     .MOD_COUNTER(10),
@@ -297,8 +321,6 @@ mod_counter #(
 );
 
 
-logic D6_overflow;
-logic D6_count;
 
 
 mod_counter #(
@@ -313,8 +335,6 @@ mod_counter #(
 );
 
 
-logic D3_overflow;
-logic D3_count;
 
 
 mod_counter #(
@@ -328,8 +348,7 @@ mod_counter #(
     .overflow(D3_overflow)
 );
 
-logic D7_overflow;
-logic D7_count;
+
 
 
 mod_counter #(
@@ -358,8 +377,7 @@ mod_counter #(
 );
 
 
-logic D8_overflow;
-logic D8_count; 
+
 
 mod_counter #(
     .MOD_COUNTER(6),
@@ -375,7 +393,6 @@ mod_counter #(
 //=====================================
 //7 segment
 
-logic [6:0] raw_segs;
 
 SevSegDisplay sevenSeg (
     .clock(clock),

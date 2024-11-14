@@ -1,4 +1,4 @@
-`include "E:\FAX\digitalnoNacrt\vaje4\vaje4.srcs\sources_1\new\vaja4.sv"
+`include "H:\digitalno\vaje4\vaje4.srcs\sources_1\new\vaja4.sv"
 
 `timescale 1s / 1us
 
