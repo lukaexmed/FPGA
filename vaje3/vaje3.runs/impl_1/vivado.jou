@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Oct 29 16:25:13 2024
+# Process ID: 2168
+# Current directory: H:/digitalno/vaje3/vaje3.runs/impl_1
+# Command line: vivado.exe -log rgb_controller.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source rgb_controller.tcl -notrace
+# Log file: H:/digitalno/vaje3/vaje3.runs/impl_1/rgb_controller.vdi
+# Journal file: H:/digitalno/vaje3/vaje3.runs/impl_1\vivado.jou
+# Running On        :PR07-10
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :12th Gen Intel(R) Core(TM) i9-12900K
+# CPU Frequency     :3187 MHz
+# CPU Physical cores:16
+# CPU Logical cores :24
+# Host memory       :34116 MB
+# Swap memory       :5100 MB
+# Total Virtual     :39216 MB
+# Available Virtual :29738 MB
+#-----------------------------------------------------------
+source rgb_controller.tcl -notrace
