@@ -167,6 +167,14 @@ module transmitter_system(
         .tx_done(tx_done),
         .baud_rst(baud_rst)
     );
+    
+//    string_transmitter string_trans_inst (
+//        .clock(clock),
+//        .reset(local_reset),
+//        .button()
+    
+    
+//    );
 
 
 endmodule
@@ -176,6 +184,7 @@ module string_transmitter(
     input logic clock,
     input logic reset,
     input logic button,
+//    input logic tx_done,
     output logic tx,
     output logic done
 );
@@ -208,7 +217,7 @@ typedef enum logic  { // binary encoding
 
 state_sender_t state, state_next;
 logic [3:0] symbol_counter, symbol_counter_next;
-logic tx_start, tx_start_next, tx_done;
+logic tx_start, tx_start_next, tx_done; // tx_done sn vzel bek zacasno
 logic [7:0] symbol, symbol_next;
 logic [7:0] done_next;
 
@@ -237,29 +246,40 @@ always_comb begin
     tx_start_next = tx_start;
     symbol_next = symbol;
     done_next = done;
-    tx_done = 
     
     case(state)
         IDLE : begin
-        tx_start = 1'b0;
+        tx_start_next = 1'b0;
             if(button) begin
                 state_next = SEND;
                 symbol_counter_next = 1'b0;
             end
         end
         SEND : begin
-        tx_start = 1'b1;
-        symbol_next = char_data[symbol_counter_next];
-//        if(tx_done) ??
-        if(symbol_counter_next < 13) begin
-            symbol_counter_next = symbol_counter_next + 1'b1;
-            done_next = 1'b1;
-            state_next = IDLE;
-        end
-        
+            tx_start_next = 1'b1;
+            symbol_next = char_data[symbol_counter_next];
+            if(tx_done) begin
+                if(symbol_counter_next < 13) begin
+                    symbol_counter_next = symbol_counter_next + 1'b1;
+                end else begin
+                    done_next = 1'b1;
+                    state_next = IDLE;
+                end
+            end
         end
     endcase
 end 
+
+
+transmitter_system trans_sys_inst (
+    .clock(clock), 
+    .reset(reset),
+    .tx_start(tx_start), 
+    .data_in(symbol),
+    //inputs into the string transmittion, outpust of the transmitter module
+    .tx(tx),
+    .tx_done(tx_done)
+);
 
 
 endmodule

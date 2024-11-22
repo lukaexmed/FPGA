@@ -1,5 +1,5 @@
 
-`include "uart_v2.sv"
+//`include "uart_v2.sv"
 `timescale 1ns / 1ps
 
 module string_transmitter_tb;
