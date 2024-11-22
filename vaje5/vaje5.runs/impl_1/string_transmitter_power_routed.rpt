@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date             : Fri Nov 22 20:48:35 2024
+| Date             : Sat Nov 23 00:02:25 2024
 | Host             : DESKTOP-VLIJTU5 running 64-bit major release  (build 9200)
 | Command          : report_power -file string_transmitter_power_routed.rpt -pb string_transmitter_power_summary_routed.pb -rpx string_transmitter_power_routed.rpx
 | Design           : string_transmitter
@@ -53,12 +53,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |       91 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       28 |     32600 |            0.09 |
-|   Register     |    <0.001 |       42 |     65200 |            0.06 |
-|   CARRY4       |    <0.001 |        4 |      8150 |            0.05 |
-|   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |    <0.001 |       62 |       --- |             --- |
+| Slice Logic    |    <0.001 |      159 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       51 |     32600 |            0.16 |
+|   CARRY4       |    <0.001 |        9 |      8150 |            0.11 |
+|   Register     |    <0.001 |       64 |     65200 |            0.10 |
+|   Others       |     0.000 |        6 |       --- |             --- |
+| Signals        |    <0.001 |       94 |       --- |             --- |
 | I/O            |    <0.001 |        5 |       210 |            2.38 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.073 |          |           |                 |
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.010 |       0.001 |      0.010 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.011 |       0.001 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -137,8 +137,10 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+------+-----------+
-| Name | Power (W) |
-+------+-----------+
++--------------------+-----------+
+| Name               | Power (W) |
++--------------------+-----------+
+| string_transmitter |     0.001 |
++--------------------+-----------+
 
 

@@ -42,7 +42,7 @@ module string_transmitter_tb;
         reset = 0;
         button = 1;
 
-        #20;
+        #20000000;
         button = 0;
         // Wait for transmission to complete
         wait(done);

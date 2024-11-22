@@ -215,6 +215,8 @@ typedef enum logic  { // binary encoding
         SEND
 } state_sender_t;
 
+logic btn_stable;
+
 state_sender_t state, state_next;
 logic [3:0] symbol_counter, symbol_counter_next;
 logic tx_start, tx_start_next, tx_done; // tx_done sn vzel bek zacasno
@@ -250,7 +252,7 @@ always_comb begin
     case(state)
         IDLE : begin
         tx_start_next = 1'b0;
-            if(button) begin
+            if(btn_stable) begin
                 state_next = SEND;
                 symbol_counter_next = 1'b0;
             end
@@ -270,7 +272,6 @@ always_comb begin
     endcase
 end 
 
-
 transmitter_system trans_sys_inst (
     .clock(clock), 
     .reset(reset),
@@ -281,5 +282,82 @@ transmitter_system trans_sys_inst (
     .tx_done(tx_done)
 );
 
+gumbek gumbek_inst (
+    .clock(clock),
+    .button(button),
+    .res(btn_stable)
+);
+
+
+endmodule
+
+
+module gumbek(
+    input logic clock,
+    input logic button,
+    output logic res
+);
+
+
+// sinhronizacija z sistemsko uro
+
+logic sync = 0; 
+logic sync_btn = 0;
+
+always_ff @(posedge clock) begin
+    //dvostopenjski sinhronizator, za metastabilnost
+    //prvi flipflop dobi asinhroni button signal, drugi flipflop dobi stabiln signal snyc
+    // in vrne stanje_btn
+    {sync_btn, sync} <= {sync, button};
+end
+
+//logic prejsnje_stanje, stisnen, spuscen;
+// za ris in fal edge gumbov
+//always_ff @(posedge clock) begin 
+//    prejsnje_stanje <= stable_btn;
+//    stisnen <= stable_btn && !prejsnje_stanje; //btn event je high ce je stable high pa prejsni low
+//    spuscen <= !stable_btn && prejsnje_stanje;
+//end
+ 
+ 
+ // rabimo debounce
+ 
+ logic [16:0] debounce_count = 0; //nekje 1.3 ms, dovolj za debounce
+ 
+ logic sync_stable_btn = 0;
+ always_ff @(posedge clock) begin
+    if(sync_btn != sync_stable_btn)
+        debounce_count <= debounce_count +1;
+    else if(debounce_count > 0)
+        debounce_count <= debounce_count -1;
+    
+    if(debounce_count[16])
+        sync_stable_btn <= sync_btn; // ce se counter nafila je btn stable
+    if(!debounce_count[0]) //ko vdari nulo spet je sync_stable_btn spet 0
+        sync_stable_btn <= 0;
+ end
+ 
+//  logic sync_stable_btn;
+// always_ff @(posedge clock) begin
+//    if(sync_btn == sync_stable_btn) begin
+//        if(debounce_count < 17'd131071)
+//            debounce_count <= debounce_count +1;
+//        else
+//            debounce_count <= 0;
+//    end
+//    if(debounce_count == 17'd131071)
+//        sync_stable_btn <= sync_btn;
+ //end
+ 
+//toggle samo enkrat, tut ce se drzi
+logic sync_stable_btn_prev = 0;
+always_ff @(posedge clock) begin 
+    if(sync_stable_btn == 1 && sync_stable_btn_prev == 0)
+        res <= 1;
+    else
+        res <= 0;
+        
+    sync_stable_btn_prev <= sync_stable_btn;
+end
 
 endmodule
