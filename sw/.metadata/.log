@@ -1,0 +1,1977 @@
+!SESSION 2025-05-13 22:21:03.446 -----------------------------------------------
+eclipse.buildId=2024.2
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2025-05-13 22:21:04.008
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2025-05-13 22:21:04.046
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.ui 4 4 2025-05-13 22:21:18.909
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:21:42.164
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:21:42.164
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:21:42.164
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:21:42.505
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:21:42.505
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:21:42.505
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:21:42.505
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:21:42.506
+!MESSAGE XSCT Command: [setws /home/luka/FPGA/sw], Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:21:42.506
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /home/luka/vivado/Vitis/2024.2/data]. Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:21:42.507
+!MESSAGE XSCT command with result: [setws /home/luka/FPGA/sw], Result: [null, ]. Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-13 22:33:37.115
+!MESSAGE Opening file dialog using preferences. Current path: /home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/fixed_hwplatforms, Local preference: scw_hwspec, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-13 22:34:23.920
+!MESSAGE Opening file dialog using preferences. Current path: /home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/fixed_hwplatforms, Local preference: scw_hwspec, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:34:35.681
+!MESSAGE XSCT Command: [::hsi::utils::openhw /tmp/hwspec_top14094498899356731865/top.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:34:35.750
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /tmp/hwspec_top14094498899356731865/top.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:34:35.755
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /tmp/hwspec_top14094498899356731865/top.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:34:35.758
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /tmp/hwspec_top14094498899356731865/top.xsa], Result: [null, {"dlmb": {"hier_name": "dlmb",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"dlmb_cntlr": {"hier_name": "dlmb_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"ilmb": {"hier_name": "ilmb",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"ilmb_cntlr": {"hier_name": "ilmb_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"iomodule_0": {"hier_name": "iomodule_0",
+"type": "iomodule",
+"version": "3.1",
+"ip_type": "PERIPHERAL",
+},
+"lmb_bram_I": {"hier_name": "lmb_bram_I",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"microblaze_I": {"hier_name": "microblaze_I",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"rst_0": {"hier_name": "rst_0",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:34:35.782
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json /tmp/hwspec_top14094498899356731865/top.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:34:35.789
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json /tmp/hwspec_top14094498899356731865/top.xsa], Result: [null, {"microblaze_I": {"freertos10_xilinx_v1_16": {"name": "freertos10_xilinx",
+"version": "1.16",
+"desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.6.1",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_16",
+},
+"standalone_v9_2": {"name": "standalone",
+"version": "9.2",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/bsp/standalone_v9_2",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:34:35.791
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /tmp/hwspec_top14094498899356731865/top.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:34:35.793
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /tmp/hwspec_top14094498899356731865/top.xsa], Result: [null, {"device": "7a50t",
+"family": "artix7",
+"timestamp": "Wed Dec 11 15:05:57 2024",
+"vivado_version": "2024.1",
+"part": "xc7a50tcsg324-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:34:58.727
+!MESSAGE XSCT Command: [platform create -name {xadc_project} -hw {/home/luka/FPGA/digitalnoNacrt/xadc/top.xsa} -proc {microblaze_I} -os {standalone} -out {/home/luka/FPGA/sw};platform write], Thread: ModalContext
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-05-13 22:34:59.170
+!MESSAGE Indexed 'xadc_project' (0 sources, 0 headers) in 0.002 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:34:59.268
+!MESSAGE XSCT command with result: [platform create -name {xadc_project} -hw {/home/luka/FPGA/digitalnoNacrt/xadc/top.xsa} -proc {microblaze_I} -os {standalone} -out {/home/luka/FPGA/sw};platform write], Result: [null, Successfully saved  the platform at "/home/luka/FPGA/sw/xadc_project/platform.spr"]. Thread: ModalContext
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-05-13 22:35:01.170
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.part.IntroPart.dispose(IntroPart.java:99)
+	at org.eclipse.ui.internal.ViewIntroAdapterPart.dispose(ViewIntroAdapterPart.java:153)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:260)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:417)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1002)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:967)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.uninject(InjectorImpl.java:200)
+	at org.eclipse.e4.core.internal.di.Requestor.uninject(Requestor.java:176)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:89)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:105)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.removeListenersTo(EclipseContext.java:491)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.uninject(ContextInjectionFactory.java:184)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:954)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.disposeWidget(ElementReferenceRenderer.java:115)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:945)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.subscribeTopicToBeRendered(PartRenderingEngine.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:92)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setToBeRendered(UIElementImpl.java:314)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1406)
+	at org.eclipse.ui.internal.WorkbenchPage.hidePart(WorkbenchPage.java:1537)
+	at org.eclipse.ui.internal.WorkbenchPage.hidePart(WorkbenchPage.java:1496)
+	at org.eclipse.ui.internal.WorkbenchPage.hideView(WorkbenchPage.java:2609)
+	at org.eclipse.ui.internal.WorkbenchIntroManager.closeIntro(WorkbenchIntroManager.java:98)
+	at com.xilinx.sdx.ui.utils.SWTUtils.closeWelcomeView(SWTUtils.java:529)
+	at com.xilinx.sdx.scw.project.ScwProjectCreationHandler$1.run(ScwProjectCreationHandler.java:71)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4930)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4451)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:166)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:368)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1033)
+	at com.xilinx.sdx.npw.NewPlatformProjectWizard.createPlatformProject(NewPlatformProjectWizard.java:125)
+	at com.xilinx.sdx.npw.NewPlatformProjectWizard.createPlatformProjectFromDSA(NewPlatformProjectWizard.java:110)
+	at com.xilinx.sdx.npw.NewPlatformProjectWizard.performFinish(NewPlatformProjectWizard.java:80)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:832)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:472)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5687)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1423)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4955)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4448)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:130)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:579)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:413)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5687)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1423)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4955)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4448)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:35:01.274
+!MESSAGE XSCT Command: [platform read {/home/luka/FPGA/sw/xadc_project/platform.spr}], Thread: Worker-11: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:35:01.280
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/luka/FPGA/sw/xadc_project/hw/top.xsa], Thread: Worker-6: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:35:01.385
+!MESSAGE XSCT command with result: [platform read {/home/luka/FPGA/sw/xadc_project/platform.spr}], Result: [null, ]. Thread: Worker-11: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:35:01.386
+!MESSAGE XSCT Command: [platform active {xadc_project}], Thread: Worker-11: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:35:01.386
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/luka/FPGA/sw/xadc_project/hw/top.xsa], Result: [null, ]. Thread: Worker-6: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:35:01.387
+!MESSAGE XSCT command with result: [platform active {xadc_project}], Result: [null, ]. Thread: Worker-11: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:35:01.516
+!MESSAGE XSCT Command: [::hsi::utils::closehw /tmp/hwspec_top14094498899356731865/top.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:35:01.518
+!MESSAGE XSCT command with result: [::hsi::utils::closehw /tmp/hwspec_top14094498899356731865/top.xsa], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:30.244
+!MESSAGE XSCT Command: [::hsi::utils::get_all_app_details -json], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:30.253
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_app_details -json], Result: [null, {"rsa_auth_app": {"userdefname": "RSA Authentication App",
+"description": "Used to RSA authenticate a user application",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/rsa_auth_app",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"hello_world": {"userdefname": "Hello World",
+"description": "Let's say 'Hello World' in C.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5 psu_cortexa72 psv_cortexr5 psv_cortexa72 psxl_cortexa78 psxl_cortexr52 psx_cortexa78 psx_cortexr52 microblaze_riscv",
+"supp_os": "standalone xilkernel",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/hello_world",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"zynqmp_fsbl": {"userdefname": "Zynq MP FSBL",
+"description": "First Stage Bootloader (FSBL) for Zynq Ultrascale+ MPSoC. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/SD/QSPI) to RAM (DDR) and takes A53/R5 out of reset.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
+"supp_proc": "psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/zynqmp_fsbl",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"openamp_rpc_demo": {"userdefname": "OpenAMP RPC Demo",
+"description": " OpenAMP rpc-demo application ",
+"supp_proc": "psu_cortexr5 psv_cortexr5 psxl_cortexr52 psx_cortexr52",
+"supp_os": "freertos10_xilinx standalone",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/openamp_rpc_demo",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"zynqmp_dram_test": {"userdefname": "Zynq MP DRAM tests",
+"description": "This application runs out of OCM and performs memory tests on Zynq MP DRAM.  For more information about the test, refer to ZYNQMP_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
+"supp_proc": "psu_cortexa53",
+"supp_os": "standalone",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/zynqmp_dram_test",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"lwip_echo_server": {"userdefname": "lwIP Echo Server",
+"description": "The lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP). This application sets up the board to use IP address 192.168.1.10 or IPv6 FE80:0:0:0:20A:35FF:FE00:102, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
+"supp_proc": "psx_cortexa78 psx_cortexr52 psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/lwip_echo_server",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"versal_plm": {"userdefname": "versal PLM",
+"description": "Platform Loader and Manager for versal and versal net.",
+"supp_proc": "psu_pmc psv_pmc psxl_pmc psx_pmc",
+"supp_os": "standalone",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/versal_plm",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"freertos_lwip_tcp_perf_server": {"userdefname": "FreeRTOS lwIP TCP Perf Server",
+"description": "The FreeRTOS LwIP TCP Server application is used for creating TCP server using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10 and IPv6 link local address when ipv6_enable is true, with MAC address 00:0a:35:00:01:02. The application creates TCP server on board and starts listening for TCP client connections. It will display client connection info and also display interim and average TCP statistics for data transfer. This application handles only 1 client connection at a time.",
+"supp_proc": "psx_cortexa78 psx_cortexr52 psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/freertos_lwip_tcp_perf_server",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"srec_bootloader": {"userdefname": "SREC Bootloader",
+"description": "Simple bootloader for loading SREC images from non volatile memory. This program assumes that you have an SREC image programmed into BPI flash. The program also assumes that the target SREC image is an application for this processor that does not overlap the bootloader and resides in separate physical memory in the hardware. Typically this application is initialized into BRAM so that it bootloads the SREC image when the FPGA is powered up.
+
+Don't forget to modify blconfig.h to reflect the physical address where your SREC image resides in non-volatile memory!",
+"supp_proc": "microblaze microblaze_riscv",
+"supp_os": "standalone",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/srec_bootloader",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"imgsel": {"userdefname": "Image Selector",
+"description": "ImgSel for Zynq Ultrascale+ MPSoC / Versal. The Image Selector  selects the image based on configuration parameters",
+"supp_proc": "psu_cortexa53 psu_pmc psv_pmc",
+"supp_os": "standalone",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/imgsel",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"openamp_matrix_multiply": {"userdefname": "OpenAMP matrix multiplication Demo",
+"description": " OpenAMP matrix multiplication application ",
+"supp_proc": "psu_cortexr5 psv_cortexr5 psxl_cortexr52 psx_cortexr52",
+"supp_os": "freertos10_xilinx standalone",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/openamp_matrix_multiply",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"versal_psmfw": {"userdefname": "versal PSM Firmware",
+"description": "Processing System Management Unit Firmware for versal.",
+"supp_proc": "psu_psm psv_psm psxl_psm psx_psm",
+"supp_os": "standalone",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/versal_psmfw",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"ddr_self_refresh": {"userdefname": "DDR self refresh",
+"description": "This DDR self refresh application provides a simple demonstration of how to enter to/exit from DDR self refresh mode. This application runs on R5 out of TCM.",
+"supp_proc": "psu_cortexr5",
+"supp_os": "standalone",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/ddr_self_refresh",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"freertos_hello_world": {"userdefname": "FreeRTOS Hello World",
+"description": " FreeRTOS Hello World application",
+"supp_proc": "psu_cortexr5 psv_cortexr5 ps7_cortexa9 psu_cortexa53 microblaze psv_cortexa72 psxl_cortexr52 psx_cortexr52 psx_cortexa78 psxl_cortexa78",
+"supp_os": "freertos10_xilinx",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/freertos_hello_world",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"img_rcvry": {"userdefname": "Image Recovery",
+"description": "Image Recovery tool which writes  user selected images on the board.",
+"supp_proc": "psu_cortexa53",
+"supp_os": "standalone",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/img_rcvry",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"lwip_udp_perf_server": {"userdefname": "lwIP UDP Perf Server",
+"description": "The LwIP UDP Perf Server application is used for creating UDP server and measure downlink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The application creates UDP server on board and starts listening for UDP client connections. It will display client connection information with interim and average UDP statistics for data transfer.",
+"supp_proc": "psx_cortexa78 psx_cortexr52 psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/lwip_udp_perf_server",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"freertos_lwip_echo_server": {"userdefname": "FreeRTOS lwIP Echo Server",
+"description": "The FreeRTOS lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP) with FreeRTOS. This application sets up the board to use IP address 192.168.1.10 or IPv6 address FE80:0:0:0:20A:35FF:FE00:102, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
+"supp_proc": "psx_cortexa78 psx_cortexr52 psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/freertos_lwip_echo_server",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"dhrystone": {"userdefname": "Dhrystone",
+"description": "Dhrystone synthetic benchmark program for baremetal environment.",
+"supp_proc": "microblaze psu_cortexa53 ps7_cortexa9 psv_cortexa72 psu_cortexr5 psv_cortexr5 microblaze_riscv",
+"supp_os": "standalone",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/dhrystone",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"peripheral_tests": {"userdefname": "Peripheral Tests",
+"description": "Simple test routines for all peripherals in the hardware.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 microblaze psv_cortexa72 psv_cortexr5 psxl_cortexa78 psxl_cortexr52 psx_cortexa78 psx_cortexr52 microblaze_riscv",
+"supp_os": "standalone xilkernel",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/peripheral_tests",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"openamp_echo_test": {"userdefname": "OpenAMP echo-test",
+"description": " OpenAMP echo-test application ",
+"supp_proc": "psu_cortexr5 psv_cortexr5 psxl_cortexr52 psx_cortexr52",
+"supp_os": "freertos10_xilinx standalone",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/openamp_echo_test",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"freertos_lwip_tcp_perf_client": {"userdefname": "FreeRTOS lwIP TCP Perf Client",
+"description": "The FreeRTOS LwIP TCP Perf Client application is used for creating TCP client and measure TCP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10 and IPv6 link local address whenipv6_enable is true, with MAC address 00:0a:35:00:01:02. This application creates TCP client on board and make connection with TCP server running on host machine. It will display connection information along with interim and average TCP statistics for data transfer.",
+"supp_proc": "psx_cortexa78 psx_cortexr52 psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/freertos_lwip_tcp_perf_client",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"memory_tests": {"userdefname": "Memory Tests",
+"description": "This application tests Memory Regions present in the hardware.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexa72 psv_cortexr5 psxl_cortexa78 psxl_cortexr52 psx_cortexa78 psx_cortexr52 microblaze_riscv",
+"supp_os": "standalone",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/memory_tests",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"libmetal_echo_demo": {"userdefname": "Libmetal AMP Demo",
+"description": "Libmetal AMP Application",
+"supp_proc": "psu_cortexr5 psv_cortexr5 psxl_cortexr52 psx_cortexr52",
+"supp_os": "freertos10_xilinx standalone",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/libmetal_echo_demo",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"freertos_lwip_udp_perf_client": {"userdefname": "FreeRTOS lwIP UDP Perf Client",
+"description": "The FreeRTOS LwIP UDP Perf Client application is used for creating UDP client and measure UDP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. This application creates UDP client on board and make connection with UDP server running on host machine. It will display connection information along with interim and average UDP statistics for data transfer.",
+"supp_proc": "psx_cortexa78 psx_cortexr52 psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/freertos_lwip_udp_perf_client",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"lwip_tcp_perf_server": {"userdefname": "lwIP TCP Perf Server",
+"description": "The LwIP TCP Perf Server application is used for creating TCP server and measure downlink performance using light-weight IP stack (lwIP). This application sets up the board to use default IPv4 address 192.168.1.10 and IPv6 link local address when ipv6_enable is true, with MAC address 00:0a:35:00:01:02. The application creates TCP server on board and starts listening for TCP client connections. It will display client connection information with interim and average TCP statistics for data transfer.",
+"supp_proc": "psx_cortexa78 psx_cortexr52 psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/lwip_tcp_perf_server",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"mba_fs_boot": {"userdefname": "mba_fs_boot",
+"description": "fs-boot for microblaze by Xilinx Inc..",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/mba_fs_boot",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"lwip_udp_perf_client": {"userdefname": "lwIP UDP Perf Client",
+"description": "The LwIP UDP Perf Client application is used for creating UDP client and measure UDP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. This application creates UDP client on board and make connection with UDP server running on host machine. It will display connection information along with interim and average UDP statistics for data transfer.",
+"supp_proc": "psx_cortexa78 psx_cortexr52 psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/lwip_udp_perf_client",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"srec_spi_bootloader": {"userdefname": "SREC SPI Bootloader",
+"description": "Simple bootloader for loading SREC images from non volatile memory (SPI). This program assumes that you have an SREC image programmed into SPI flash already. The program also assumes that the target SREC image is an application for this processor that does not overlap the bootloader and resides in separate physical memory in the hardware. Typically this application is initialized into BRAM so that it bootloads the SREC image when the FPGA is powered up.
+
+Don't forget to modify blconfig.h to reflect the offset where your SREC image resides in non-volatile memory!",
+"supp_proc": "microblaze microblaze_riscv",
+"supp_os": "standalone",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/srec_spi_bootloader",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"freertos_lwip_udp_perf_server": {"userdefname": "FreeRTOS lwIP UDP Perf Server",
+"description": "The FreeRTOS LwIP UDP Perf Server application is used for creating UDP server and measure downlink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The application creates UDP server on board and starts listening for UDP client connections. It will display client connection information with interim and average UDP statistics for data transfer.",
+"supp_proc": "psx_cortexa78 psx_cortexr52 psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/freertos_lwip_udp_perf_server",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"lwip_tcp_perf_client": {"userdefname": "lwIP TCP Perf Client",
+"description": "The LwIP TCP Perf Client application is used for creating TCP client and measure TCP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10 and IPv6 link local address when ipv6_enable is true, with MAC address 00:0a:35:00:01:02. This application creates TCP client on board and make connection with TCP server running on host machine. It will display connection information along with interim and average TCP statistics for data transfer.",
+"supp_proc": "psx_cortexa78 psx_cortexr52 psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/lwip_tcp_perf_client",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"empty_application": {"userdefname": "Empty Application(C)",
+"description": "A blank C project.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5 psu_cortexa72 psv_cortexr5 psv_cortexa72 psxl_cortexa78 psxl_cortexr52 psx_cortexa78 psx_cortexr52 microblaze_riscv",
+"supp_os": "standalone xilkernel freertos10_xilinx",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/empty_application",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"zynq_dram_test": {"userdefname": "Zynq DRAM tests",
+"description": "This application runs out of OCM and performs memory tests and read/write eye measurements on Zynq DRAM.  For more information about the test, refer to ZYNQ_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/zynq_dram_test",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"zynq_fsbl": {"userdefname": "Zynq FSBL",
+"description": "First Stage Bootloader (FSBL) for Zynq. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/NOR/QSPI) to RAM (DDR) and starts executing it.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/zynq_fsbl",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"zynqmp_pmufw": {"userdefname": "ZynqMP PMU Firmware",
+"description": "Platform Management Unit Firmware for ZynqMP.",
+"supp_proc": "psu_pmu",
+"supp_os": "standalone",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps/zynqmp_pmufw",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "true",
+},
+"linux_hello_world": {"userdefname": "Linux Hello World",
+"description": "Let's say 'Hello World' in C.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze psv_cortexa72",
+"supp_os": "linux",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps_linux/linux_hello_world",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+"linux_empty_app": {"userdefname": "Linux Empty Application",
+"description": "A blank Linux C project.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze psv_cortexa72",
+"supp_os": "linux",
+"path": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/sw_apps_linux/linux_empty_app",
+"os": "linux",
+"platform_required": NO,
+"bsp_constraints": "false",
+},
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:30.261
+!MESSAGE XSCT Command: [::hsi::utils::openhw /tmp/hwspec_top8598667321976214670/top.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:30.326
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /tmp/hwspec_top8598667321976214670/top.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:30.327
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /tmp/hwspec_top8598667321976214670/top.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:30.330
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /tmp/hwspec_top8598667321976214670/top.xsa], Result: [null, {"dlmb": {"hier_name": "dlmb",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"dlmb_cntlr": {"hier_name": "dlmb_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"ilmb": {"hier_name": "ilmb",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"ilmb_cntlr": {"hier_name": "ilmb_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"iomodule_0": {"hier_name": "iomodule_0",
+"type": "iomodule",
+"version": "3.1",
+"ip_type": "PERIPHERAL",
+},
+"lmb_bram_I": {"hier_name": "lmb_bram_I",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"microblaze_I": {"hier_name": "microblaze_I",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"rst_0": {"hier_name": "rst_0",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:30.364
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:30.426
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:30.426
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:30.429
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa], Result: [null, {"dlmb": {"hier_name": "dlmb",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"dlmb_cntlr": {"hier_name": "dlmb_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"ilmb": {"hier_name": "ilmb",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"ilmb_cntlr": {"hier_name": "ilmb_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"iomodule_0": {"hier_name": "iomodule_0",
+"type": "iomodule",
+"version": "3.1",
+"ip_type": "PERIPHERAL",
+},
+"lmb_bram_I": {"hier_name": "lmb_bram_I",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"microblaze_I": {"hier_name": "microblaze_I",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"rst_0": {"hier_name": "rst_0",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:30.430
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw /tmp/hwspec_top8598667321976214670/top.xsa -os standalone -processor microblaze_I -app hello_world -sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:30.433
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /tmp/hwspec_top8598667321976214670/top.xsa -os standalone -processor microblaze_I -app hello_world -sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:30.434
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw /tmp/hwspec_top8598667321976214670/top.xsa -os standalone -processor microblaze_I -app hello_world -sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:30.437
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /tmp/hwspec_top8598667321976214670/top.xsa -os standalone -processor microblaze_I -app hello_world -sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:44.145
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw /tmp/hwspec_top8598667321976214670/top.xsa -os standalone -processor microblaze_I -app hello_world -sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:44.150
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /tmp/hwspec_top8598667321976214670/top.xsa -os standalone -processor microblaze_I -app hello_world -sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:48.124
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_app/system.mss ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:48.125
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_app/system.mss ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:48.126
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_app/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:48.128
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_app/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.713
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa microblaze_I C_USE_REORDER_INSTR], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.715
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa microblaze_I C_USE_REORDER_INSTR], Result: [null, 0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.716
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa microblaze_I C_ENDIANNESS], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.717
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa microblaze_I C_ENDIANNESS], Result: [null, 1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.718
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa microblaze_I C_USE_BARREL], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.720
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa microblaze_I C_USE_BARREL], Result: [null, 0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.720
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa microblaze_I C_USE_PCMP_INSTR], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.721
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa microblaze_I C_USE_PCMP_INSTR], Result: [null, 0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.722
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa microblaze_I C_USE_DIV], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.723
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa microblaze_I C_USE_DIV], Result: [null, 0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.724
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa microblaze_I C_USE_FPU], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.725
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa microblaze_I C_USE_FPU], Result: [null, 0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.726
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa microblaze_I C_USE_HW_MUL], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.728
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa microblaze_I C_USE_HW_MUL], Result: [null, 0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.728
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa microblaze_I C_AREA_OPTIMIZED], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.730
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa microblaze_I C_AREA_OPTIMIZED], Result: [null, 1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.736
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.746
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa], Result: [null, {"microblaze_I": {"freertos10_xilinx_v1_16": {"name": "freertos10_xilinx",
+"version": "1.16",
+"desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.6.1",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_16",
+},
+"standalone_v9_2": {"name": "standalone",
+"version": "9.2",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/lib/bsp/standalone_v9_2",
+},
+},
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.747
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_app/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.748
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_app/system.mss], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.748
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_app/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.750
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_app/system.mss], Result: [null, {}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.751
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa microblaze_I], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.752
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa microblaze_I], Result: [null, dlmb_cntlr ilmb_cntlr iomodule_0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.752
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_app/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.755
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_app/system.mss], Result: [null, {"dlmb_cntlr": {"name": "bram",
+"ver": "4.11",
+},
+"ilmb_cntlr": {"name": "bram",
+"ver": "4.11",
+},
+"iomodule_0": {"name": "iomodule",
+"ver": "2.17",
+},
+"microblaze_I": {"name": "cpu",
+"ver": "2.18",
+},
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.756
+!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.823
+!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa], Result: [null, {"dlmb": {"version": "3.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"dlmb_cntlr": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"bram_v4_11": {"name": "bram",
+"version": "4.11",
+"repo": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_11",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ilmb": {"version": "3.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ilmb_cntlr": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"bram_v4_11": {"name": "bram",
+"version": "4.11",
+"repo": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_11",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"iomodule_0": {"version": "3.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"iomodule_v2_17": {"name": "iomodule",
+"version": "2.17",
+"repo": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/XilinxProcessorIPLib/drivers/iomodule_v2_17",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"lmb_bram_I": {"version": "8.4",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"microblaze_I": {"version": "11.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"cpu_riscv_v1_1": {"name": "cpu_riscv",
+"version": "1.1",
+"repo": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_riscv_v1_1",
+"compilerflags": "",
+"linkerflags": "",
+},
+"cpu_v2_18": {"name": "cpu",
+"version": "2.18",
+"repo": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_v2_18",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"rst_0": {"version": "5.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/home/luka/vivado/Vitis/2024.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.825
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_app/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.826
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_app/system.mss], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.827
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_app/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.829
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_app/system.mss], Result: [null, {}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.887
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.888
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.888
+!MESSAGE XSCT Command: [::hsi::utils::opensw /home/luka/FPGA/sw/xadc_app/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.889
+!MESSAGE XSCT command with result: [::hsi::utils::opensw /home/luka/FPGA/sw/xadc_app/system.mss], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.889
+!MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa -sw /home/luka/FPGA/sw/xadc_app/system.mss -app hello_world -processor microblaze_I -os standalone -dir /home/luka/FPGA/sw/xadc_app/src], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:49.951
+!MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa -sw /home/luka/FPGA/sw/xadc_app/system.mss -app hello_world -processor microblaze_I -os standalone -dir /home/luka/FPGA/sw/xadc_app/src], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:50.036
+!MESSAGE XSCT Command: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {/home/luka/FPGA/sw/xadc_app/_ide/bitstream}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:50.044
+!MESSAGE XSCT command with result: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {/home/luka/FPGA/sw/xadc_app/_ide/bitstream}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:50.044
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:50.046
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa], Result: [null, {"device": "7a50t",
+"family": "artix7",
+"timestamp": "Wed Dec 11 15:05:57 2024",
+"vivado_version": "2024.1",
+"part": "xc7a50tcsg324-1",
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:50.121
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_app/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:50.122
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_app/system.mss], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-13 22:36:50.167
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-05-13 22:36:50.466
+!MESSAGE Indexed 'xadc_app_system' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:50.497
+!MESSAGE XSCT Command: [::hsi::utils::closehw /tmp/hwspec_top8598667321976214670/top.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:36:50.498
+!MESSAGE XSCT command with result: [::hsi::utils::closehw /tmp/hwspec_top8598667321976214670/top.xsa], Result: [null, ]. Thread: main
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-05-13 22:36:50.639
+!MESSAGE Indexed 'xadc_app' (2 sources, 41 headers) in 0.171 sec: 1,440 declarations; 2,087 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:40:51.507
+!MESSAGE XSCT Command: [platform read {/home/luka/FPGA/sw/xadc_project/platform.spr}], Thread: Worker-9: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:40:51.598
+!MESSAGE XSCT command with result: [platform read {/home/luka/FPGA/sw/xadc_project/platform.spr}], Result: [null, ]. Thread: Worker-9: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:43:00.816
+!MESSAGE XSCT Command: [platform read {/home/luka/FPGA/sw/xadc_project/platform.spr}], Thread: Worker-9: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:43:00.892
+!MESSAGE XSCT command with result: [platform read {/home/luka/FPGA/sw/xadc_project/platform.spr}], Result: [null, ]. Thread: Worker-9: Initializing the platform to enable editing
+
+!ENTRY org.eclipse.core.jobs 4 2 2025-05-13 22:43:31.970
+!MESSAGE An internal error occurred during: "Initializing hardware specification UI...".
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: null argument:
+	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:88)
+	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:76)
+	at org.eclipse.core.runtime.Path.initialize(Path.java:643)
+	at org.eclipse.core.runtime.Path.<init>(Path.java:241)
+	at org.eclipse.core.runtime.Path.<init>(Path.java:189)
+	at com.xilinx.sdk.utils.internal.XPathUtils.getPathForGNUTool(XPathUtils.java:12)
+	at com.xilinx.sdk.hw.internal.HwPlatform.<init>(HwPlatform.java:357)
+	at com.xilinx.sdk.hw.internal.HwSpecFactory.createHwSpec(HwSpecFactory.java:56)
+	at com.xilinx.sdx.scw.ui.hwspec.HwSpecViewerPage.lambda$0(HwSpecViewerPage.java:93)
+	at org.eclipse.core.runtime.jobs.Job$2.run(Job.java:185)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jface 4 2 2025-05-13 22:43:31.992
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jface".
+!STACK 0
+java.lang.IllegalArgumentException: Path for project must have only one segment.
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:66)
+	at org.eclipse.core.internal.resources.WorkspaceRoot.getProject(WorkspaceRoot.java:150)
+	at com.xilinx.sdx.scw.util.ScwProjectHelper.getProject(ScwProjectHelper.java:65)
+	at com.xilinx.sdx.scw.util.ScwProjectHelper.getExportFolder(ScwProjectHelper.java:95)
+	at com.xilinx.sdx.scw.util.ScwProjectHelper.hasExportContent(ScwProjectHelper.java:137)
+	at com.xilinx.sdx.scw.util.ScwPlatformStatusHelper.isPlatformGenerated(ScwPlatformStatusHelper.java:65)
+	at com.xilinx.sdx.scw.ui.editor.ScwPlatformLabelProvider.getDecoratedPlatformImage(ScwPlatformLabelProvider.java:91)
+	at com.xilinx.sdx.scw.ui.editor.ScwPlatformLabelProvider.getImage(ScwPlatformLabelProvider.java:66)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.getImage(DelegatingStyledCellLabelProvider.java:198)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.update(DelegatingStyledCellLabelProvider.java:124)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:144)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:954)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:121)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.JFaceUtil.lambda$0(JFaceUtil.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1032)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:427)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.JFaceUtil.lambda$0(JFaceUtil.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.updateItem(StructuredViewer.java:2108)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createTreeItem(AbstractTreeViewer.java:848)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:826)
+	at org.eclipse.jface.viewers.TreeViewer.createChildren(TreeViewer.java:604)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:774)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalInitializeTree(AbstractTreeViewer.java:1594)
+	at org.eclipse.jface.viewers.TreeViewer.internalInitializeTree(TreeViewer.java:780)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.lambda$1(AbstractTreeViewer.java:1579)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1397)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:363)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1358)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.inputChanged(AbstractTreeViewer.java:1573)
+	at org.eclipse.ui.dialogs.FilteredTree$NotifyingTreeViewer.inputChanged(FilteredTree.java:966)
+	at org.eclipse.jface.viewers.ContentViewer.setInput(ContentViewer.java:282)
+	at org.eclipse.jface.viewers.StructuredViewer.setInput(StructuredViewer.java:1631)
+	at com.xilinx.sdx.scw.ui.editor.ScwPlatformTreeViewer.createUi(ScwPlatformTreeViewer.java:74)
+	at com.xilinx.sdx.scw.ui.editor.ScwPlatformUi.createPlatformViewer(ScwPlatformUi.java:90)
+	at com.xilinx.sdx.scw.ui.editor.ScwPlatformUi.createUi(ScwPlatformUi.java:63)
+	at com.xilinx.sdx.scw.ui.editor.AbsScwUiComponent.internalCreateUi(AbsScwUiComponent.java:86)
+	at com.xilinx.sdx.scw.ui.editor.AbsScwUiComponent.lambda$0(AbsScwUiComponent.java:77)
+	at com.xilinx.sdx.scw.ui.editor.AbsScwUiComponent.runUiUpdateOperation(AbsScwUiComponent.java:226)
+	at com.xilinx.sdx.scw.ui.editor.AbsScwUiComponent.createAndInitUi(AbsScwUiComponent.java:76)
+	at com.xilinx.sdx.scw.ui.editor.ScwMainPage.createFormContent(ScwMainPage.java:37)
+	at org.eclipse.ui.forms.editor.FormPage.lambda$0(FormPage.java:166)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.forms.editor.FormPage.createPartControl(FormPage.java:166)
+	at org.eclipse.ui.forms.editor.FormEditor.pageChange(FormEditor.java:480)
+	at org.eclipse.ui.part.MultiPageEditorPart.setActivePage(MultiPageEditorPart.java:1032)
+	at org.eclipse.ui.forms.editor.FormEditor.setActivePage(FormEditor.java:612)
+	at org.eclipse.ui.part.MultiPageEditorPart.createPartControl(MultiPageEditorPart.java:337)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:154)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:96)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:361)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1002)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:967)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:408)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:331)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1002)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$1.handleEvent(PartServiceImpl.java:107)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5797)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:170)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:188)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:661)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:625)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:790)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1263)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3195)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$9(WorkbenchPage.java:3100)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3098)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3068)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3051)
+	at org.eclipse.ui.ide.IDE.openEditorOnFileStore(IDE.java:1376)
+	at org.eclipse.ui.internal.ide.actions.OpenLocalFileAction.run(OpenLocalFileAction.java:100)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:579)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:413)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5687)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1423)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4955)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4448)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-05-13 22:43:32.006
+!MESSAGE 
+!STACK 0
+java.lang.IllegalArgumentException: Path for project must have only one segment.
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:66)
+	at org.eclipse.core.internal.resources.WorkspaceRoot.getProject(WorkspaceRoot.java:150)
+	at com.xilinx.sdx.scw.util.ScwProject.getProject(ScwProject.java:43)
+	at com.xilinx.sdx.scw.ui.editor.AbsScwUiComponent.getProject(AbsScwUiComponent.java:479)
+	at com.xilinx.sdx.scw.ui.editor.AbsScwUiComponent.createCustomizedBrowseField(AbsScwUiComponent.java:299)
+	at com.xilinx.sdx.scw.ui.editor.AbsScwUiComponent.createFileBrowseField(AbsScwUiComponent.java:293)
+	at com.xilinx.sdx.scw.ui.editor.ScwPlatformUi.createGeneralSection(ScwPlatformUi.java:148)
+	at com.xilinx.sdx.scw.ui.editor.ScwPlatformUi.createContentSection(ScwPlatformUi.java:132)
+	at com.xilinx.sdx.scw.ui.editor.ScwPlatformUi.createUi(ScwPlatformUi.java:65)
+	at com.xilinx.sdx.scw.ui.editor.AbsScwUiComponent.internalCreateUi(AbsScwUiComponent.java:86)
+	at com.xilinx.sdx.scw.ui.editor.AbsScwUiComponent.lambda$0(AbsScwUiComponent.java:77)
+	at com.xilinx.sdx.scw.ui.editor.AbsScwUiComponent.runUiUpdateOperation(AbsScwUiComponent.java:226)
+	at com.xilinx.sdx.scw.ui.editor.AbsScwUiComponent.createAndInitUi(AbsScwUiComponent.java:76)
+	at com.xilinx.sdx.scw.ui.editor.ScwMainPage.createFormContent(ScwMainPage.java:37)
+	at org.eclipse.ui.forms.editor.FormPage.lambda$0(FormPage.java:166)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.forms.editor.FormPage.createPartControl(FormPage.java:166)
+	at org.eclipse.ui.forms.editor.FormEditor.pageChange(FormEditor.java:480)
+	at org.eclipse.ui.part.MultiPageEditorPart.setActivePage(MultiPageEditorPart.java:1032)
+	at org.eclipse.ui.forms.editor.FormEditor.setActivePage(FormEditor.java:612)
+	at org.eclipse.ui.part.MultiPageEditorPart.createPartControl(MultiPageEditorPart.java:337)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:154)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:96)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:361)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1002)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:967)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:408)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:331)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1002)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$1.handleEvent(PartServiceImpl.java:107)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5797)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:170)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:188)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:661)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:625)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:790)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1263)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3195)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$9(WorkbenchPage.java:3100)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3098)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3068)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3051)
+	at org.eclipse.ui.ide.IDE.openEditorOnFileStore(IDE.java:1376)
+	at org.eclipse.ui.internal.ide.actions.OpenLocalFileAction.run(OpenLocalFileAction.java:100)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:579)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:413)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5687)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1423)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4955)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4448)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.jface 4 2 2025-05-13 22:43:32.290
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jface".
+!STACK 0
+java.lang.IllegalArgumentException: Path for project must have only one segment.
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:66)
+	at org.eclipse.core.internal.resources.WorkspaceRoot.getProject(WorkspaceRoot.java:150)
+	at com.xilinx.sdx.scw.util.ScwProjectHelper.getProject(ScwProjectHelper.java:65)
+	at com.xilinx.sdx.scw.util.ScwProjectHelper.getExportFolder(ScwProjectHelper.java:95)
+	at com.xilinx.sdx.scw.util.ScwProjectHelper.hasExportContent(ScwProjectHelper.java:137)
+	at com.xilinx.sdx.scw.util.ScwPlatformStatusHelper.isPlatformGenerated(ScwPlatformStatusHelper.java:65)
+	at com.xilinx.sdx.scw.ui.editor.ScwPlatformLabelProvider.getDecoratedPlatformImage(ScwPlatformLabelProvider.java:91)
+	at com.xilinx.sdx.scw.ui.editor.ScwPlatformLabelProvider.getImage(ScwPlatformLabelProvider.java:66)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.getImage(DelegatingStyledCellLabelProvider.java:198)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.update(DelegatingStyledCellLabelProvider.java:124)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:144)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:954)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:121)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.JFaceUtil.lambda$0(JFaceUtil.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1032)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:427)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.JFaceUtil.lambda$0(JFaceUtil.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.updateItem(StructuredViewer.java:2108)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.updateChildren(AbstractTreeViewer.java:2773)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefreshStruct(AbstractTreeViewer.java:1954)
+	at org.eclipse.jface.viewers.TreeViewer.internalRefreshStruct(TreeViewer.java:677)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1930)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1887)
+	at org.eclipse.jface.viewers.StructuredViewer.lambda$3(StructuredViewer.java:1481)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1397)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:363)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1358)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1481)
+	at org.eclipse.jface.viewers.ColumnViewer.refresh(ColumnViewer.java:538)
+	at org.eclipse.ui.dialogs.FilteredTree$NotifyingTreeViewer.refresh(FilteredTree.java:996)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1442)
+	at org.eclipse.ui.dialogs.FilteredTree$NotifyingTreeViewer.refresh(FilteredTree.java:984)
+	at org.eclipse.ui.dialogs.FilteredTree$1.runInUIThread(FilteredTree.java:497)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:95)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4930)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4451)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:47:42.151
+!MESSAGE XSCT Command: [::hsi::utils::closehw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa], Thread: Worker-9: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:47:42.152
+!MESSAGE XSCT command with result: [::hsi::utils::closehw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa], Result: [null, ]. Thread: Worker-9: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:47:42.153
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa], Thread: Worker-9: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:47:42.216
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa], Result: [null, ]. Thread: Worker-9: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:47:42.217
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-9: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:47:42.218
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-9: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:47:42.219
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-9: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:47:42.220
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-9: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-13 22:47:42.220
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:47:42.222
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-9: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:47:42.223
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-9: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:47:44.729
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa], Thread: Worker-9: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 22:47:44.732
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa], Result: [null, {"dlmb": {"hier_name": "dlmb",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"dlmb_cntlr": {"hier_name": "dlmb_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"ilmb": {"hier_name": "ilmb",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"ilmb_cntlr": {"hier_name": "ilmb_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"iomodule_0": {"hier_name": "iomodule_0",
+"type": "iomodule",
+"version": "3.1",
+"ip_type": "PERIPHERAL",
+},
+"lmb_bram_I": {"hier_name": "lmb_bram_I",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"microblaze_I": {"hier_name": "microblaze_I",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"rst_0": {"hier_name": "rst_0",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-9: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-13 22:47:45.417
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '1'
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-05-13 22:54:22.610
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-05-13 22:54:22.611
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-05-13 22:54:22.611
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:04:21.479
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:04:21.480
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:04:21.481
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:04:21.482
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-13 23:04:21.482
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:04:21.483
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:04:21.484
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2025-05-13 23:04:22.417
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:06:31.702
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:06:31.704
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:06:31.705
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:06:31.707
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-13 23:06:31.707
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:06:31.708
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:06:31.709
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2025-05-13 23:06:32.441
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:13:33.011
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:13:33.013
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:13:33.013
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:13:33.016
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-13 23:13:33.016
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:13:33.018
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:13:33.019
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2025-05-13 23:13:33.907
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:14:14.272
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:14:14.274
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:14:14.274
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:14:14.276
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-13 23:14:14.276
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:14:14.276
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:14:14.277
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2025-05-13 23:14:15.006
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:14:35.860
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:14:35.862
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:14:35.863
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:14:35.864
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-13 23:14:35.864
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:14:35.865
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:14:35.866
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2025-05-13 23:14:36.597
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:15:09.659
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:15:09.661
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:15:09.661
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:15:09.663
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-13 23:15:09.664
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:15:09.664
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:15:09.665
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2025-05-13 23:15:10.351
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:16:38.900
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-23: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:16:38.903
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-23: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:16:38.903
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-23: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:16:38.906
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-23: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-13 23:16:38.906
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:16:38.907
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-23: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:16:38.908
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-23: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2025-05-13 23:16:39.643
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:41:55.071
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-20: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:41:55.073
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-20: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:41:55.074
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-20: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:41:55.077
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-20: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-13 23:41:55.077
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:41:55.077
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-20: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:41:55.079
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-20: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2025-05-13 23:41:55.868
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:42:17.545
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:42:17.548
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:42:17.548
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:42:17.550
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-13 23:42:17.550
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:42:17.550
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:42:17.551
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2025-05-13 23:42:18.281
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:44:03.408
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-28: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:44:03.410
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-28: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:44:03.411
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-28: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:44:03.412
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-28: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-13 23:44:03.412
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:44:03.413
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-28: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:44:03.413
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-28: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2025-05-13 23:44:04.163
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:45:46.451
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:45:46.453
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:45:46.453
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:45:46.454
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-13 23:45:46.455
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:45:46.455
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-13 23:45:46.456
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-13 23:45:49.434
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:07:14.395
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:07:14.397
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:07:14.397
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:07:14.399
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-14 00:07:14.399
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:07:14.399
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:07:14.400
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-14 00:07:17.220
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '3'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:25:08.209
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-34: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:25:08.211
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-34: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:25:08.211
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-34: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:25:08.212
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-34: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-14 00:25:08.213
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:25:08.213
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-34: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:25:08.214
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-34: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-14 00:25:11.047
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '4'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:26:43.222
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-38: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:26:43.225
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-38: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:26:43.225
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-38: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:26:43.227
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-38: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-14 00:26:43.228
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:26:43.228
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-38: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:26:43.229
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-38: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-14 00:26:46.204
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '5'
+
+!ENTRY org.eclipse.core.jobs 4 2 2025-05-14 00:36:52.906
+!MESSAGE LockManager.handleException
+!STACK 0
+java.lang.IllegalStateException: Need an underlying widget to be able to set the input.(Has the widget been disposed?)
+	at org.eclipse.jface.viewers.StructuredViewer.setInput(StructuredViewer.java:1626)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditorPage.refreshMemories(LscriptEditorPage.java:340)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditorPage$4.run(LscriptEditorPage.java:364)
+	at org.eclipse.ui.internal.PendingSyncExec.run(PendingSyncExec.java:68)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:171)
+	at org.eclipse.ui.internal.UILockListener.aboutToWait(UILockListener.java:139)
+	at org.eclipse.core.internal.jobs.LockManager.aboutToWait(LockManager.java:109)
+	at org.eclipse.core.internal.jobs.OrderedLock.doAcquire(OrderedLock.java:155)
+	at org.eclipse.core.internal.jobs.OrderedLock.acquire(OrderedLock.java:109)
+	at org.eclipse.core.internal.jobs.OrderedLock.acquire(OrderedLock.java:85)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:230)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:426)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:408)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:402)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:395)
+	at org.eclipse.cdt.core.model.CoreModel.getProjectDescription(CoreModel.java:1423)
+	at org.eclipse.cdt.managedbuilder.internal.core.ManagedBuildInfo.findExistingDefaultConfiguration(ManagedBuildInfo.java:268)
+	at org.eclipse.cdt.managedbuilder.internal.core.ManagedBuildInfo.getDefaultConfiguration(ManagedBuildInfo.java:254)
+	at com.xilinx.sdx.core.project.SDXProjectConfigurationUtils.getActiveBuildConfig(SDXProjectConfigurationUtils.java:50)
+	at com.xilinx.sdx.core.project.SDXProjectManager.getProjectActiveConfigSettings(SDXProjectManager.java:275)
+	at com.xilinx.sdx.assistant.adapters.system.SystemProjectAdapter.getAction(SystemProjectAdapter.java:202)
+	at com.xilinx.sdx.assistant.view.SDXAssistantView.updateContextActions(SDXAssistantView.java:526)
+	at com.xilinx.sdx.assistant.view.SDXAssistantView.refreshAndResetColumnWidths(SDXAssistantView.java:765)
+	at com.xilinx.sdx.assistant.view.SDXAssistantView$2.lambda$0(SDXAssistantView.java:311)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4930)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4451)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:36:54.515
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-40: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:36:54.517
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-40: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:36:54.517
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-40: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:36:54.519
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-40: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-14 00:36:54.519
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:36:54.519
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-40: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:36:54.520
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-40: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-14 00:36:57.378
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '6'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:43:14.744
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-47: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:43:14.746
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-47: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:43:14.746
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-47: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:43:14.748
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-47: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-14 00:43:14.748
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:43:14.748
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-47: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:43:14.749
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-47: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-14 00:43:17.615
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '7'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:43:54.648
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-47: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:43:54.650
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-47: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:43:54.650
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-47: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:43:54.652
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-47: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-14 00:43:54.653
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:43:54.653
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-47: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-14 00:43:54.654
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-47: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-14 00:43:57.571
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '8'

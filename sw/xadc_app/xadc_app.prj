@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="xadc_app" location="/home/luka/FPGA/sw/xadc_app" platform="/home/luka/FPGA/sw/xadc_project/export/xadc_project/xadc_project.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="xadc_app_system" sysConfig="xadc_project" runtime="C/C++" cpu="standalone_domain" cpuInstance="microblaze_I" os="standalone" mssSignature="16a32f39eba045f88f7c74c98a8a70e2">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.793862257">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.650237803" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

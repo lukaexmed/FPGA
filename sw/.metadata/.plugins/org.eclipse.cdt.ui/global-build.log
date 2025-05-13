@@ -1,0 +1,51 @@
+Nothing to build in platform 'xadc_project'
+
+00:43:54 **** Incremental Build of configuration Debug for project xadc_app ****
+make all 
+Building file: ../src/xadc.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc.o" -I/home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/bspinclude/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xadc.d" -MT"src/xadc.o" -o "src/xadc.o" "../src/xadc.c"
+In file included from /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/bspinclude/include/xil_types.h:52,
+                 from /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/bspinclude/include/xil_printf.h:16,
+                 from ../src/xadc.h:5,
+                 from ../src/xadc.c:1:
+/home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/bspinclude/include/xparameters.h:545: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
+  545 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
+      | 
+/home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/bspinclude/include/xparameters.h:501: note: this is the location of the previous definition
+  501 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
+      | 
+/home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/bspinclude/include/xparameters.h:546: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
+  546 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
+      | 
+/home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/bspinclude/include/xparameters.h:502: note: this is the location of the previous definition
+  502 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
+      | 
+/home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/bspinclude/include/xparameters.h:566: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
+  566 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
+      | 
+/home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/bspinclude/include/xparameters.h:519: note: this is the location of the previous definition
+  519 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
+      | 
+/home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/bspinclude/include/xparameters.h:567: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
+  567 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
+      | 
+/home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/bspinclude/include/xparameters.h:520: note: this is the location of the previous definition
+  520 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
+      | 
+Finished building: ../src/xadc.c
+ 
+Building target: xadc_app.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "xadc_app.elf" ./src/main.o ./src/platform.o ./src/sevenSegment.o ./src/timer.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: xadc_app.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size xadc_app.elf  |tee "xadc_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2860	     24	   3428	   6312	   18a8	xadc_app.elf
+Finished building: xadc_app.elf.size
+ 
+00:43:56 **** Incremental Build of configuration Debug for project xadc_app_system ****
+make all 
+Skipping SD card image generation. Reason: The system project only has applications for microblaze processors.
