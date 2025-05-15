@@ -1,12 +1,12 @@
-00:43:54 **** Incremental Build of configuration Debug for project xadc_app ****
+22:36:20 **** Incremental Build of configuration Debug for project xadc_app ****
 make all 
-Building file: ../src/xadc.c
+Building file: ../src/main.c
 Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadc.o" -I/home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/bspinclude/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xadc.d" -MT"src/xadc.o" -o "src/xadc.o" "../src/xadc.c"
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I/home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/bspinclude/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 In file included from /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/bspinclude/include/xil_types.h:52,
                  from /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/bspinclude/include/xil_printf.h:16,
-                 from ../src/xadc.h:5,
-                 from ../src/xadc.c:1:
+                 from ../src/timer.h:5,
+                 from ../src/main.c:1:
 /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/bspinclude/include/xparameters.h:545: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
   545 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
       | 
@@ -31,19 +31,19 @@ In file included from /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xad
 /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/bspinclude/include/xparameters.h:520: note: this is the location of the previous definition
   520 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
       | 
-Finished building: ../src/xadc.c
+Finished building: ../src/main.c
  
 Building target: xadc_app.elf
 Invoking: MicroBlaze gcc linker
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "xadc_app.elf" ./src/main.o ./src/platform.o ./src/sevenSegment.o ./src/timer.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "xadc_app.elf" ./src/input.o ./src/main.o ./src/platform.o ./src/sevenSegment.o ./src/timer.o ./src/xadc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 Finished building target: xadc_app.elf
  
 Invoking: MicroBlaze Print Size
 mb-size xadc_app.elf  |tee "xadc_app.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   2860	     24	   3428	   6312	   18a8	xadc_app.elf
+  10416	     24	   3424	  13864	   3628	xadc_app.elf
 Finished building: xadc_app.elf.size
  
 
-00:43:55 Build Finished (took 771ms)
+22:36:20 Build Finished (took 822ms)
 

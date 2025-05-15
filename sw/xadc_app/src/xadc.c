@@ -4,24 +4,24 @@
 #define SLOT 3
 #define ADC0_REG 0
 #define TMP_REG	4
-#define VCC_REG 4
+#define VCC_REG 5
 #define read(base , offset)	(*(volatile uint32_t *)(base + (((SLOT) << 5) + offset) * 4))
 
 
 
 uint16_t read_raw(int n){
 	uint16_t rd_data;
-	rd_data = (uint16_t) read(BRIDGE_BASE, ADC0_REG+n) & 0x0000ffff;
-	return (rd_data)/100 - 15;
+	rd_data = (uint16_t) read(BRIDGE_BASE, ADC0_REG+n) & 0x0000ffff; //mask to fit 16bit status register
+	return (rd_data);
 }
 double read_adc_in(int n){
 	uint16_t raw;
-	raw = read_raw(n) >> 4;
+	raw = read_raw(n) >> 4; // adc is 12 bit, hence the shift is needed
 	return ((double)raw/4096.0);
 }
 double read_fpga_vcc(){
-	return (read_adc_in(VCC_REG)*3.0);
+	return (read_adc_in(VCC_REG)*3.0); //-1 to 1 voltage to 3V
 }
 double read_fpga_temp(){
-	return (read_adc_in(TMP_REG)*503.975 - 273.15);
+	return (read_adc_in(TMP_REG)*503.975 - 273.15); //
 }

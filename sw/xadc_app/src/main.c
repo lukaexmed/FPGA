@@ -1,14 +1,16 @@
 #include "timer.h"
 #include "sevenSegment.h"
 #include "xadc.h"
+#include "input.h"
 
 int main(){
     init_platform();
 
     uint64_t counter, limit;
     uint32_t seconds = 0;
+    uint32_t choice = 4; //(default is temperature)
 
-    limit = 10000000;
+    limit = 50000000; //resfresh every 0.5 s
 
     display_enable();
     display_send(seconds);
@@ -18,10 +20,11 @@ int main(){
     while(1){
 
     	counter = timer_read();
+    	choice = read_input();
 
     	if(counter >= limit){
     		seconds++;
-    		uint32_t temp = (uint32_t)read_raw(0);
+    		uint32_t temp = (uint32_t)read_adc_in(choice);
     		uint32_t display = 0;
     		for(int i = 0; i < 8; i++){
     			display = display | ((temp % 10) << i*4); //

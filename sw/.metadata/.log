@@ -1975,3 +1975,448 @@ java.lang.IllegalStateException: Need an underlying widget to be able to set the
 
 !ENTRY com.xilinx.sdk.utils 1 0 2025-05-14 00:43:57.571
 !MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '8'
+!SESSION 2025-05-15 21:20:28.587 -----------------------------------------------
+eclipse.buildId=2024.2
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2025-05-15 21:20:29.429
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2025-05-15 21:20:29.454
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.ui 4 4 2025-05-15 21:20:44.214
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:20:50.300
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:20:50.300
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:20:50.303
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:20:50.303
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:20:50.304
+!MESSAGE XSCT Command: [setws /home/luka/FPGA/sw], Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:20:50.306
+!MESSAGE XSCT command with result: [setws /home/luka/FPGA/sw], Result: [null, ]. Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:20:53.058
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:20:54.143
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:20:54.144
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:20:54.145
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /home/luka/vivado/Vitis/2024.2/data]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-05-15 21:36:40.577
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-05-15 21:36:40.578
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-05-15 21:36:40.578
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:43:17.547
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:43:17.611
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa], Result: [null, ]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:43:17.616
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:43:17.619
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:43:17.620
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:43:17.622
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-15 21:43:17.624
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:43:17.628
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:43:17.629
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:45:04.613
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:45:04.615
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:45:04.615
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:45:04.617
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-15 21:45:04.617
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:45:04.618
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:45:04.619
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:53:00.960
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:53:00.962
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:53:00.963
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:53:00.964
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-15 21:53:00.964
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:53:00.965
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:53:00.966
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:53:35.734
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:53:35.736
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:53:35.736
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:53:35.739
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-15 21:53:35.739
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:53:35.740
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:53:35.741
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:54:45.462
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:54:45.465
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:54:45.465
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:54:45.467
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-15 21:54:45.467
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:54:45.468
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:54:45.470
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:57:35.104
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:57:35.106
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:57:35.106
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:57:35.108
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-15 21:57:35.108
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:57:35.109
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:57:35.110
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:58:05.904
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:58:05.906
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:58:05.906
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:58:05.908
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-15 21:58:05.908
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:58:05.909
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:58:05.910
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-19: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:58:19.187
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:58:19.189
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:58:19.189
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:58:19.191
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-15 21:58:19.191
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:58:19.192
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 21:58:19.193
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:00:05.089
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:00:05.092
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:00:05.092
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:00:05.094
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-15 22:00:05.094
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:00:05.094
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:00:05.095
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:01:10.040
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:01:10.041
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:01:10.042
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:01:10.044
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-15 22:01:10.044
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:01:10.044
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:01:10.045
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:32:00.136
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:32:00.138
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:32:00.139
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:32:00.141
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-15 22:32:00.141
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:32:00.141
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:32:00.142
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:32:02.443
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:32:02.447
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa], Result: [null, {"dlmb": {"hier_name": "dlmb",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"dlmb_cntlr": {"hier_name": "dlmb_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"ilmb": {"hier_name": "ilmb",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"ilmb_cntlr": {"hier_name": "ilmb_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"iomodule_0": {"hier_name": "iomodule_0",
+"type": "iomodule",
+"version": "3.1",
+"ip_type": "PERIPHERAL",
+},
+"lmb_bram_I": {"hier_name": "lmb_bram_I",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"microblaze_I": {"hier_name": "microblaze_I",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"rst_0": {"hier_name": "rst_0",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-15 22:32:03.138
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:33:55.400
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:33:55.402
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:33:55.402
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:33:55.404
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-15 22:33:55.404
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:33:55.405
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:33:55.406
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:35:01.612
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:35:01.614
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:35:01.614
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:35:01.616
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-15 22:35:01.616
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:35:01.616
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:35:01.617
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:36:20.062
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Thread: Worker-22: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:36:20.063
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-22: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:36:20.064
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-22: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:36:20.065
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/luka/FPGA/sw/xadc_project/export/xadc_project/hw/top.xsa /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-22: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-15 22:36:20.065
+!MESSAGE Generating MD5 hash for file: /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:36:20.066
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Thread: Worker-22: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-15 22:36:20.067
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/luka/FPGA/sw/xadc_project/export/xadc_project/sw/xadc_project/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-22: Build Project
