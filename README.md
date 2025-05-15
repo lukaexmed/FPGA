@@ -5,7 +5,8 @@ all docs from https://docs.amd.com/r/en-US/ug480_7Series_XADC
 The signals from the XADC are on RDP interface
 
 ![slike](imgs/slika1.png)
-![slike](imgs/Screenshot 2025-05-15 at 4.45.51 PM.png)
+![slike](imgs/slika2.png)
+
 #### DRP interface
 register address is on *daddr_in*
 when conversion is done, eoc (end of conversion) is sent to den_in
@@ -19,11 +20,11 @@ this reading operation takes multiple cycles, so its incopatible with fpro bus s
 
 
 channel reading;
-![slike](imgs/Screenshot 2025-05-15 at 8.25.32 PM.png)
+![slike](imgs/slika3.png)
  internal temp -> 5'b00000
 internal vcc -> 5'b00001 
 
-![slike](imgs/Screenshot 2025-05-15 at 8.26.38 PM.png)
+![slike](imgs/slika4.png)
 
 vauxp/n 2 -> 5'b10010
 vauxp/n 3 ->5'b10011 
