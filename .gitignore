@@ -1,4 +1,5 @@
-digitalnoNacrt/
+!digitalnoNacrt/
+digitalnoNacrt/*
 !digitalnoNacrt/xadc/
-!digitalnoNacrt/xadc/*
 misc/
+sw/.metadata/*
