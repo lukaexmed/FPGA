@@ -1,9 +1,10 @@
 "# FPGA" 
+
 all docs from https://docs.amd.com/r/en-US/ug480_7Series_XADC
 ### XADC
 The signals from the XADC are on RDP interface
 
-![slike](imgs/Screenshot 2025-05-15 at 4.38.54 PM.png)
+![slike](imgs/slika1.png)
 ![slike](imgs/Screenshot 2025-05-15 at 4.45.51 PM.png)
 #### DRP interface
 register address is on *daddr_in*
