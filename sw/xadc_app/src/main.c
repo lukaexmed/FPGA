@@ -24,7 +24,8 @@ int main(){
 
     	if(counter >= limit){
     		seconds++;
-    		uint32_t temp = (uint32_t)read_adc_in(choice);
+    		uint32_t temp = (uint32_t)read_raw(0);
+    		//double temp = 1234.7890;
     		uint32_t display = 0;
     		for(int i = 0; i < 8; i++){
     			display = display | ((temp % 10) << i*4); //

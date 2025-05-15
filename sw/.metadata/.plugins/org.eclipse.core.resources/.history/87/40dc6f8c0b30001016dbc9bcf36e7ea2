@@ -1,8 +1,0 @@
-#ifndef XADC_H
-#define XADC_H
-
-#include "platform.h"
-#include "xil_printf.h"
-
-
-#endif
