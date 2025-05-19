@@ -13,7 +13,7 @@ int main(){
 
     limit = 100000000; //resfresh every 1s
     uint16_t lights = 0;
-    bool rising = true;
+    bool rising = false;
 
     display_enable();
     display_send(seconds);
@@ -27,9 +27,9 @@ int main(){
 
     	if(counter >= limit){
     		//light mechanism
-    		if(lights == 0xFFFF)
+    		if(lights == 0xFFFF || lights == 0x0000)
     			rising = !rising;
-    		lights = rising ? (lights << 1) + 1 : (lights >> 1) - 1 ;//rising lights
+    		lights = rising ? (lights << 1) + 1 : (lights >> 1) ;//rising lights
     		write_output(lights);
 
     		seconds++;
