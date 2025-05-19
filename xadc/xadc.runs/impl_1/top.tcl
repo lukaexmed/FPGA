@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "/home/luka/FPGA/digitalnoNacrt/xadc/xadc.runs/impl_1/top.tcl"
+  variable script "/home/luka/FPGA/xadc/xadc.runs/impl_1/top.tcl"
   variable category "vivado_impl"
 }
 
@@ -97,6 +97,7 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config  -id {[BD 41-1306]}  -suppress 
 set_msg_config  -id {[BD 41-1271]}  -suppress 
 set_msg_config  -id {[BD 41-1306]}  -suppress 
@@ -113,7 +114,7 @@ set rc [catch {
   set_param chipscope.maxJobs 2
   set_param runs.launchOptions { -jobs 8  }
   open_checkpoint top_routed.dcp
-  set_property webtalk.parent_dir /home/luka/FPGA/digitalnoNacrt/xadc/xadc.cache/wt [current_project]
+  set_property webtalk.parent_dir /home/luka/FPGA/xadc/xadc.cache/wt [current_project]
 set_property TOP top [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

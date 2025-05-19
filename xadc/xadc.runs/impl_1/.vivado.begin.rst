@@ -113,3 +113,33 @@
     <Process Command="vivado" Owner="luka" Host="luka-maschinsky" Pid="64094" HostCore="8" HostMemory="32711096">
     </Process>
 </ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="luka" Host="luka-maschinsky" Pid="76904" HostCore="8" HostMemory="32711096">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="luka" Host="luka-maschinsky" Pid="77076" HostCore="8" HostMemory="32711096">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="luka" Host="luka-maschinsky" Pid="77525" HostCore="8" HostMemory="32711096">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="luka" Host="luka-maschinsky" Pid="79963" HostCore="8" HostMemory="32711096">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="luka" Host="luka-maschinsky" Pid="80361" HostCore="8" HostMemory="32711096">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="luka" Host="luka-maschinsky" Pid="80772" HostCore="8" HostMemory="32711096">
+    </Process>
+</ProcessHandle>
