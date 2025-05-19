@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="string_transmitter_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="string_transmitter_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="811.560 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,037.689 ns"></ZoomEndTime>
+      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="116"></NameColumnWidth>
+      <ValueColumnWidth column_width="71"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="22" />
+   <wvobject fp_name="/string_transmitter_tb/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/string_transmitter_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/string_transmitter_tb/wr_data" type="array">
+      <obj_property name="ElementShortName">wr_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/string_transmitter_tb/tx" type="logic">
+      <obj_property name="ElementShortName">tx</obj_property>
+      <obj_property name="ObjectShortName">tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/string_transmitter_tb/tx_done" type="logic">
+      <obj_property name="ElementShortName">tx_done</obj_property>
+      <obj_property name="ObjectShortName">tx_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/string_transmitter_tb/tx_start" type="logic">
+      <obj_property name="ElementShortName">tx_start</obj_property>
+      <obj_property name="ObjectShortName">tx_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/string_transmitter_tb/button" type="logic">
+      <obj_property name="ElementShortName">button</obj_property>
+      <obj_property name="ObjectShortName">button</obj_property>
+   </wvobject>
+   <wvobject fp_name="/string_transmitter_tb/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider25">
+      <obj_property name="label">instance</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/string_transmitter_tb/uut/symbol_next" type="array">
+      <obj_property name="ElementShortName">symbol_next[7:0]</obj_property>
+      <obj_property name="ObjectShortName">symbol_next[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/string_transmitter_tb/uut/done_next" type="array">
+      <obj_property name="ElementShortName">done_next[7:0]</obj_property>
+      <obj_property name="ObjectShortName">done_next[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/string_transmitter_tb/uut/tx_start_next" type="logic">
+      <obj_property name="ElementShortName">tx_start_next</obj_property>
+      <obj_property name="ObjectShortName">tx_start_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/string_transmitter_tb/uut/tx_done" type="logic">
+      <obj_property name="ElementShortName">tx_done</obj_property>
+      <obj_property name="ObjectShortName">tx_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/string_transmitter_tb/uut/state_next" type="other">
+      <obj_property name="ElementShortName">state_next</obj_property>
+      <obj_property name="ObjectShortName">state_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/string_transmitter_tb/uut/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/string_transmitter_tb/uut/tx" type="logic">
+      <obj_property name="ElementShortName">tx</obj_property>
+      <obj_property name="ObjectShortName">tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/string_transmitter_tb/uut/button" type="logic">
+      <obj_property name="ElementShortName">button</obj_property>
+      <obj_property name="ObjectShortName">button</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider76">
+      <obj_property name="label">gumbek</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/string_transmitter_tb/uut/gumbek_inst/button" type="logic">
+      <obj_property name="ElementShortName">button</obj_property>
+      <obj_property name="ObjectShortName">button</obj_property>
+   </wvobject>
+   <wvobject fp_name="/string_transmitter_tb/uut/gumbek_inst/sync_btn" type="logic">
+      <obj_property name="ElementShortName">sync_btn</obj_property>
+      <obj_property name="ObjectShortName">sync_btn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/string_transmitter_tb/uut/gumbek_inst/sync_stable_btn" type="logic">
+      <obj_property name="ElementShortName">sync_stable_btn</obj_property>
+      <obj_property name="ObjectShortName">sync_stable_btn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/string_transmitter_tb/uut/gumbek_inst/debounce_count" type="array">
+      <obj_property name="ElementShortName">debounce_count[16:0]</obj_property>
+      <obj_property name="ObjectShortName">debounce_count[16:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>
