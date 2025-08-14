@@ -32,7 +32,7 @@ int main(){
     		//lights = rising ? (lights << 1) + 1 : (lights >> 1) ;//rising lights
     		//write_output(lights);
 
-    		uint16_t raw = (uint16_t)read_adc(0) & 0x0FFF;
+    		uint16_t raw = (uint16_t)read_adc(5) & 0x0FFF;
 
     		    	    // 2) compute how many LEDs: round(raw*16/4095)
     		    	    uint8_t leds_on = (raw * 16 + 2047) / 4095;
@@ -47,9 +47,9 @@ int main(){
 
 
     		seconds++;
-    		uint16_t temp = (uint16_t)read_adc(5);
-    		//uint16_t temp = 1234.7890;
-    		uint16_t display = 0;
+    		uint32_t temp = (uint32_t)read_adc(5);
+    		//uint32_t temp = 12345.7890;
+    		uint32_t display = 0;
     		//converting from hex to dec
     		for(int i = 0; i < 8; i++){
     			display = display | ((temp % 10) << i*4); //
