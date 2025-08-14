@@ -86,3 +86,18 @@ timestamp=[2025-05-19 22:16:09], mode=BUILD, duration=0:00:00.878, duration_ms=8
 timestamp=[2025-05-19 22:24:17], mode=BUILD, duration=0:00:00.999, duration_ms=999, data={name=xadc_app, configuration=Debug, clean_build=false}
 timestamp=[2025-05-19 22:26:22], mode=BUILD, duration=0:00:00.783, duration_ms=783, data={name=xadc_app, configuration=Debug, clean_build=false}
 timestamp=[2025-05-19 22:27:04], mode=BUILD, duration=0:00:00.877, duration_ms=877, data={name=xadc_app, configuration=Debug, clean_build=false}
+timestamp=[2025-08-15 02:40:14], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.020, duration_ms=20, data={}
+timestamp=[2025-08-15 02:40:15], mode=WORKBENCH_START, duration=0:00:09.719, duration_ms=9719, data={}
+timestamp=[2025-08-15 02:40:15], mode=WORKBENCH_UI_INIT, duration=0:00:00.398, duration_ms=398, data={editors_count=4, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,xadc_app,xadc_app_system,xadc_project}
+timestamp=[2025-08-15 02:45:48], mode=BUILD, duration=0:00:01.664, duration_ms=1664, data={name=xadc_app, configuration=Debug, clean_build=false}
+timestamp=[2025-08-15 02:49:48], mode=BUILD, duration=0:00:00.895, duration_ms=895, data={name=xadc_app, configuration=Debug, clean_build=false}
+timestamp=[2025-08-15 02:55:00], mode=BUILD, duration=0:00:00.827, duration_ms=827, data={name=xadc_app, configuration=Debug, clean_build=false}
+timestamp=[2025-08-15 02:56:39], mode=BUILD, duration=0:00:00.775, duration_ms=775, data={name=xadc_app, configuration=Debug, clean_build=false}
+timestamp=[2025-08-15 03:09:07], mode=BUILD, duration=0:00:00.885, duration_ms=885, data={name=xadc_app, configuration=Debug, clean_build=false}
+timestamp=[2025-08-15 03:09:37], mode=BUILD, duration=0:00:00.879, duration_ms=879, data={name=xadc_app, configuration=Debug, clean_build=false}
+timestamp=[2025-08-15 03:11:21], mode=BUILD, duration=0:00:00.773, duration_ms=773, data={name=xadc_app, configuration=Debug, clean_build=false}
+timestamp=[2025-08-15 03:12:30], mode=BUILD, duration=0:00:00.678, duration_ms=678, data={name=xadc_app, configuration=Debug, clean_build=false}
+timestamp=[2025-08-15 03:12:58], mode=BUILD, duration=0:00:00.876, duration_ms=876, data={name=xadc_app, configuration=Debug, clean_build=false}
+timestamp=[2025-08-15 03:15:01], mode=BUILD, duration=0:00:00.874, duration_ms=874, data={name=xadc_app, configuration=Debug, clean_build=false}
+timestamp=[2025-08-15 03:17:26], mode=BUILD, duration=0:00:00.823, duration_ms=823, data={name=xadc_app, configuration=Debug, clean_build=false}
+timestamp=[2025-08-15 03:25:22], mode=BUILD, duration=0:00:00.978, duration_ms=978, data={name=xadc_app, configuration=Debug, clean_build=false}
