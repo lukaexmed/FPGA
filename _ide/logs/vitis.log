@@ -1,0 +1,12 @@
+14:13:43 INFO  : updated workspace path: C:\Users\Lazar\VitisProjects\FPGA
+14:13:43 INFO  : cmd.exe, /C, empyro.bat repo -st   D:\Vivado\2025.1\Vitis\data\embeddedsw
+14:13:48 INFO  : [INFO]: Initializing repositories
+14:13:48 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+14:13:48 INFO  : Successfully created repository data at C:\Users\Lazar\VitisProjects\FPGA/_ide\.wsdata
+14:13:48 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\lazal\AppData\Local\Temp\rigel_lopper_lazal16569442167516927429 -r C:\Users\Lazar\VitisProjects\FPGA\_ide\.wsdata\.repo.yaml
+14:13:49 INFO  : Embedded Template List generated successfully
+14:14:04 INFO  : connection terminated
+14:14:04 INFO  : connection terminated
+14:14:04 INFO  : scheduling shutdown timer for 2 seconds ...
+14:14:06 INFO  : Terminating Vitis C++ Server
+14:14:06 INFO  : Vitis C++ Server terminated
