@@ -12,13 +12,14 @@
 #define BTN_NEXT_BIT 0
 #define TMP_REG      4
 #define VCC_REG      5
+#define BTN_PREV_BIT 1
 
 /* ---------- Thermistor model (Beta equation) ---------- */
-/* 1/T = 1/T25 + (1/Beta) * ln(R/R25)  =>  T(ï¿½C) = 1/(1/T25 + ln(R/R25)/Beta) - 273.15 */
-#define TH_NTC_25DEG_FACTOR  (1.0f / 298.15f)   // 25 ï¿½C in Kelvin
+/* 1/T = 1/T25 + (1/Beta) * ln(R/R25)  =>  T(°C) = 1/(1/T25 + ln(R/R25)/Beta) - 273.15 */
+#define TH_NTC_25DEG_FACTOR  (1.0f / 298.15f)   // 25 °C in Kelvin
 
 
-static const float rth_nom = 100000.0f;   // R25 = 100 kOhm at 25 ï¿½C
+static const float rth_nom = 100000.0f;   // R25 = 100 kOhm at 25 °C
 static const float beta    = 4092.0f;     // Beta (K) ~4092 or 3950 depending on part
 
 static const float Vsup     = 1.0f;        // node full-scale that maps to XADC 4095
@@ -28,7 +29,7 @@ static const float R_SERIES = 20000.0f;    // series resistor in ohms (set to yo
 /* Simple assert alias so your existing macro compiles cleanly */
 #define TH_ASSERT(x) assert(x)
 
-/* Convert thermistor resistance to ï¿½C (Beta model) */
+/* Convert thermistor resistance to °C (Beta model) */
 static float th_calc_ntc_temperature(const float rth, const float beta, const float rth_nom)
 {
     TH_ASSERT(rth_nom > 0.0f);
@@ -54,13 +55,27 @@ int main(void){
 
     while (1) {
         /* --- Button rising edge -> next channel (0..5) --- */
-        uint16_t inputs = read_input();
-        bool btn_now  = (inputs & (1u << BTN_NEXT_BIT)) != 0;
-        bool btn_prev = (last_inputs & (1u << BTN_NEXT_BIT)) != 0;
-        if (btn_now && !btn_prev) {
-            channel = (uint8_t)((channel + 1) % 6);
-        }
-        last_inputs = inputs;
+    	uint16_t inputs = read_input();
+
+    	bool next_now = (inputs      & (1u << BTN_NEXT_BIT)) != 0;
+    	bool next_was = (last_inputs & (1u << BTN_NEXT_BIT)) != 0;
+    	bool prev_now = (inputs      & (1u << BTN_PREV_BIT)) != 0;
+    	bool prev_was = (last_inputs & (1u << BTN_PREV_BIT)) != 0;
+
+    	bool next_rise = next_now && !next_was;
+    	bool prev_rise = prev_now && !prev_was;
+
+    	/* If exactly one rose, move accordingly; if both (or none), do nothing */
+    	if (next_rise ^ prev_rise) {
+    	    if (next_rise) {
+    	        channel = (uint8_t)((channel + 1) % 6);      // 0->1->...->5->0
+    	    } else { // prev_rise
+    	        channel = (uint8_t)((channel + 5) % 6);      // decrement with wrap
+    	        /* equivalent to: channel = (channel == 0) ? 5 : (channel - 1); */
+    	    }
+    	}
+
+    	last_inputs = inputs;
 
         counter = timer_read();
         if (counter >= limit) {
@@ -70,7 +85,7 @@ int main(void){
 
             /* 2) LED bar with per-channel ranges:
                   - ch 0,1,3,5 -> 0..4095
-                  - ch 2,4     -> 0..100 (ï¿½C) */
+                  - ch 2,4     -> 0..100 (°C) */
             uint16_t mask = 0;
             if (channel == 0 || channel == 1 || channel == 3 || channel == VCC_REG) {
                 /* 0..4095 range */
@@ -78,7 +93,7 @@ int main(void){
                 uint8_t leds_on = (uint32_t)(raw12 * 16u + 2047u) / 4095u; // rounded
                 mask = (leds_on == 0) ? 0 : (uint16_t)((1u << leds_on) - 1u);
             } else if (channel == 2) {
-                /* 0..100 ï¿½C range from thermistor */
+                /* 0..100 °C range from thermistor */
                 uint16_t raw12 = (uint16_t)(adc_val & 0x0FFF);
                 float v_adc = (float)raw12 / 4095.0f;   // 0..1.000 V at XADC
                 float Vnode = v_adc / K_PRE;
@@ -92,7 +107,7 @@ int main(void){
                 uint8_t leds_on = (uint32_t)(t * 16u + 50u) / 100u;       // rounded
                 mask = (leds_on == 0) ? 0 : (uint16_t)((1u << leds_on) - 1u);
             } else if (channel == TMP_REG) {
-                /* 0..100 ï¿½C range from internal temperature */
+                /* 0..100 °C range from internal temperature */
                 uint16_t raw12 = (uint16_t)(adc_val & 0x0FFF);
                 int32_t milliC = ((int32_t)raw12 * 503975 + 2048) / 4096 - 273150;
                 int32_t degC = (milliC >= 0) ? (milliC + 500)/1000 : (milliC - 500)/1000;
@@ -108,7 +123,7 @@ int main(void){
             uint32_t value_to_show;
 
             if (channel == TMP_REG) {
-                /* XADC internal temperature (convert raw -> ï¿½C in fixed-point) */
+                /* XADC internal temperature (convert raw -> °C in fixed-point) */
                 uint16_t raw12 = (uint16_t)(adc_val & 0x0FFF);
                 // milliC = raw*503.975/4096 - 273.15
                 int32_t milliC = ((int32_t)raw12 * 503975 + 2048) / 4096 - 273150;
@@ -121,7 +136,7 @@ int main(void){
             }
             else if (channel == 2) {
                 /* --- Thermistor on channel 2 ---
-                   Convert ADC -> node voltage -> thermistor resistance -> ï¿½C */
+                   Convert ADC -> node voltage -> thermistor resistance -> °C */
                 uint16_t raw12 = (uint16_t)(adc_val & 0x0FFF);
                 float v_adc = (float)raw12 / 4095.0f;   // 0..1.000 V
                 float Vnode = v_adc / K_PRE;

@@ -13,5 +13,6 @@ uint32_t read_adc(int n){
 	uint32_t data = read(n) & 0x0000ffff; //mask to fit 16bit status register
 	//data = (data >> 4) /4096;
 	data = (data >> 4);// adc is 12 bit, hence the shift is needed, /4096
+
 	return data;
 }
